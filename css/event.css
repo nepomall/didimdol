@@ -1,0 +1,160 @@
+/* 이벤트 리스트--------------------------------------------- */
+.event_page .page_title{
+    font-size: 27px;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.event_page .event_wrap .empty_box{
+    padding: 280px 0;
+    font-size: 21px;
+    text-align: center;
+    color: #666;
+}
+
+.event_page .event_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event_page .event_list li{
+    width: 334px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    background: #fff;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+.event_page .event_list li:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.event_page .event_list .img_box{
+    width: 100%;
+    height: 155px;
+}
+
+.event_page .event_list .text_box{
+    padding: 24px 14px;
+}
+
+.event_page .event_list .event_title{
+    font-size: 18px;
+    margin-bottom: 36px;
+    font-weight: 500;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.event_page .event_list .date{
+    font-size: 18px;
+    color: #afafaf;
+}
+
+/* 이벤트 상세--------------------------------------------- */
+/* 게시글 */
+.event_page.detail .post_wrap{
+    padding: 30px 0 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+}
+
+.event_page.detail .post_wrap .top_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event_page.detail .post_wrap .top_area .title{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.event_page.detail .post_wrap .top_area .right{
+    display: flex;
+    align-items: center;
+}
+
+.event_page.detail .post_wrap .top_area span{
+    font-size: 18px;
+    color: #afafaf;
+}
+
+.event_page.detail .post_wrap .top_area .end{
+    color: #FF1F1F;
+}
+
+.event_page.detail .post{
+    margin: 30px 0 60px;
+}
+
+.event_page.detail .post .img_box{
+    width: 100%;
+    min-height: 530px;
+    background: #d9d9d9;
+}
+
+.event_page.detail .post_nav{
+     margin-top: 70px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.event_page.detail .post_nav>div{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    padding: 0 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+}
+
+.event_page.detail .post_nav>div:first-child{
+    margin-bottom: 10px;
+}
+
+.event_page.detail .post_nav p{
+    font-size: 18px;
+    margin: 0 40px 0 20px;
+    font-weight: 500;
+    color: #444;
+}
+
+.event_page.detail .post_nav span{
+    font-size: 18px;
+    color: #444;
+}
+
+.event_page.detail .post_nav .icon_box{
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_side_open.svg) no-repeat center center / contain;
+}
+
+.event_page.detail .post_nav .before .icon_box{
+    transform: rotate(90deg);
+}
+
+.event_page.detail .post_nav .after .icon_box{
+    transform: rotate(-90deg);
+}
+
+.event_page.detail .post_nav .goList_btn{
+    width: 122px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: none;
+}

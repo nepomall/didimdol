@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/share.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/share.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page share_page manage detail">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="class_data_share.html" class="link basic_btn white">
+                            수업 자료 공유
+                        </a>
+                        <a href="class_manage_share.html" class="link basic_btn orange">
+                            학급 운영 공유
+                        </a>
+                        <a href="class_newbie_share.html" class="link basic_btn white">
+                            새내기 Q&A
+                        </a>
+                        <a href="class_diary.html" class="link basic_btn white">
+                            수업 일기
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>나눔 마당</span>
+                        <span>학급 운영 공유</span>
+                    </div>
+                    <ul class="category">
+                        <li class="grade">
+                            <span>1학년</span>
+                        </li>
+                        <li class="semester">
+                            <span>1학기</span>
+                        </li>
+                        <li class="subject">
+                            <span>수학</span>
+                        </li>
+                    </ul>
+                    <!-- 게시글 -->
+                    <div class="post_wrap">
+                        <div class="top_area">
+                            <h3 class="title">수업자료</h3>
+                            <div class="right">
+                                <span class="writer">정**</span>
+                                <span class="date">0000.00.00</span>
+                                <a href="class_manage_share_edit.html" class="basic_btn whiteOg edit_btn">수정</a>
+                                <a href="#" onclick="return false;" class="basic_btn orange delete_btn">삭제</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="img_box">
+                                <img src="../../img/digitalClass/big_plain.png" alt="">
+                            </div>
+                            <p>
+                                피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의
+                                자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.
+                                국군의 조직과 편성은 법률로 정한다. 탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다. 공무원의 직무상 불법행위로 손해를 받은
+                                국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.
+                            </p>
+                        </div>
+                        <ul class="extra_option">
+                            <li class="attach">
+                                <div class="left">
+                                    <p>첨부파일</p>
+                                    <span>첨부파일.jpg</span>
+                                </div>
+                                <div class="right">
+                                    <button class="preview_btn"></button>
+                                    <button class="download_btn">
+                                        <a href="../../download/test.txt" class="link" download></a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="url">
+                                <div class="left">
+                                    <p>Url</p>
+                                    <a href="#" onclick="return false;" class="link">www.abcdef.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="post_num">
+                            <li class="view">
+                                <span>50</span>
+                            </li>
+                            <li class="like">
+                                <span>50</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 댓글 -->
+                    <div class="comment_wrap">
+                        <div class="comment_write top">
+                            <span class="comment_num">총 댓글(10)</span>
+                            <textarea placeholder="댓글을 입력해 주세요."></textarea>
+                            <button class="basic_btn orange regist_btn" disabled>등록</button>
+                        </div>
+                        <ul class="comment_list">
+                            <li class="normal">
+                                <span class="name">홍**</span>
+                                <div class="comment_control">
+                                    <button class="reply">답글달기</button>
+                                    <button class="delete_btn">삭제</button>
+                                    <button class="edit">수정</button>
+                                    <span class="date">0000. 00. 00</span>
+                                </div>
+                                <p>
+                                    댓글입니다.
+                                </p>
+                            </li>
+                            <li class="comment_write reply">
+                                <span class="name">홍**</span>
+                                <textarea placeholder="답글을 입력해 주세요."></textarea>
+                                <button class="basic_btn orange regist_btn" disabled>등록</button>
+                            </li>
+                            <li class="normal">
+                                <span class="name">홍**</span>
+                                <div class="comment_control">
+                                    <button class="reply">답글달기</button>
+                                    <span class="date">0000. 00. 00</span>
+                                </div>
+                                <p>
+                                    댓글입니다.
+                                </p>
+                            </li>
+                            <li class="normal reply">
+                                <span class="name">홍**</span>
+                                <div class="comment_control">
+                                    <span class="date">0000. 00. 00</span>
+                                </div>
+                                <p>
+                                    해당 댓글에 대한 답글
+                                </p>
+                            </li>
+                            <li class="normal">
+                                <span class="name">홍**</span>
+                                <div class="comment_control">
+                                    <button class="reply">답글달기</button>
+                                    <span class="date">0000. 00. 00</span>
+                                </div>
+                                <p>
+                                    댓글입니다.
+                                </p>
+                            </li>
+                            <li class="normal reply">
+                                <span class="name">홍**</span>
+                                <div class="comment_control">
+                                    <span class="date">0000. 00. 00</span>
+                                </div>
+                                <p>
+                                    해당 댓글에 대한 답글
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="pagenation">
+                            <div class="prev icon_box active"></div>
+                            <ul>
+                                <li class="num active">
+                                    <span>1</span>
+                                </li>
+                                <li class="num">
+                                    <span>2</span>
+                                </li>
+                                <li class="num">
+                                    <span>3</span>
+                                </li>
+                                <li class="num">
+                                    <span>4</span>
+                                </li>
+                                <li class="num">
+                                    <span>5</span>
+                                </li>
+                            </ul>
+                            <div class="next icon_box"></div>
+                        </div>
+                    </div>
+                    <div class="post_nav">
+                        <div class="before">
+                            <div class="icon_box"></div>
+                            <p>이전글</p>
+                            <span>이전 글 제목입니다.</span>
+                        </div>
+                        <div class="after">
+                            <div class="icon_box"></div>
+                            <p>다음글</p>
+                            <span>다음 글 제목입니다.</span>
+                        </div>
+                        <a href="class_manage_share.html" class="basic_btn orange link goList_btn">목록</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 모달ex -->
+        <div class="modal_wrap message_modal delete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    삭제를 진행하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

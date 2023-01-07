@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type='text/javascript' src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/d_quiz.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/d_quiz.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="d_quiz_page common library">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>D퀴즈</span>
+                    </div>
+                    <button class="logout_btn"></button>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="d_quiz_main.html" class="link basic_btn white">
+                            홈
+                        </a>
+                        <a href="d_quiz_make_stepOne.html" class="link basic_btn white">
+                            퀴즈 만들기
+                        </a>
+                        <a href="d_quiz_library.html" class="link basic_btn orange">
+                            라이브러리
+                        </a>
+                        <a href="d_quiz_my.html" class="link basic_btn white">
+                            마이 퀴즈
+                        </a>
+                        <a href="d_quiz_report.html" class="link basic_btn white">
+                            퀴즈 리포트
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <div class="top_area">
+                        <div class="left">
+                            <select name="select_writer" id="select_writer" class="custom_select sources" placeholder="전체">
+                                <option value="" selected>전체</option>
+                                <option value="">디** 제작</option>
+                                <option value="">선생님 공유</option>
+                            </select>
+                            <select name="select_subject" id="select_subject" class="custom_select sources" placeholder="과목">
+                                <option value="" selected>수학</option>
+                                <option value="">과학</option>
+                                <option value="">사회</option>
+                            </select>
+                            <select name="select_grade" id="select_grade" class="custom_select sources" placeholder="학년">
+                                <option value="" selected>1학년</option>
+                                <option value="">2학년</option>
+                                <option value="">3학년</option>
+                                <option value="">4학년</option>
+                                <option value="">5학년</option>
+                                <option value="">6학년</option>
+                            </select>
+                            <select name="select_semester" id="select_semester" class="custom_select sources" placeholder="학기">
+                                <option value="" selected>1학기</option>
+                                <option value="">2학기</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="검색어를 입력해 주세요.">
+                            <button type="button" class="basic_btn orange search_btn">
+                                검색
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table_wrap">
+                        <ul class="table_head">
+                            <li>
+                                <span>
+                                    과목
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    학년/학기
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    제목
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    생성일
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    문항 수
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    작성자
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    미리보기
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    플레이
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    저장
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="table_body">
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2-1
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산 퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        2022.04.11
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        5
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        디**
+                                    </span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="play_btn"></button>
+                                </li>
+                                <li>
+                                    <button class="save_btn"></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- 모달 -->
+        <!-- 퀴즈 저장 완료 모달 -->
+        <div class="modal_wrap message_modal saveComplete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    퀴즈가 저장되었습니다. 마이 퀴즈에서 확인하세요.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 퀴즈 저장 중복 모달 -->
+        <div class="modal_wrap message_modal saveOverlap_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    이미 저장한 퀴즈입니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

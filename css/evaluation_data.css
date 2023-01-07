@@ -1,0 +1,490 @@
+/* 평가자료페이지-------------------------------------------- */
+/* 사이드 ----------------------------*/
+.evaluation_data_page .choice_wrap{
+    margin-top: 0;
+}
+
+.evaluation_data_page .choice_wrap .choice_box{
+    justify-content: space-between;
+}
+
+.sub_page .choice_wrap .choice_btn:not(:last-child){
+    margin-right: 0;
+}
+
+.evaluation_data_page .choice_wrap .choice_btn.grade_btn{
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.evaluation_data_page .choice_wrap .choice_btn.semester_btn{
+    width: 111px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.evaluation_data_page .choice_wrap .choice_box.grade{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.evaluation_data_page .choice_wrap .choice_box.semester{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.evaluation_data_page .choice_wrap .accordion_wrap>li{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.evaluation_data_page .choice_wrap .accordion_wrap>li:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.evaluation_data_page .choice_wrap .subject_title{
+    height: 53px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evaluation_data_page .choice_wrap .subject_title::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s all;
+    background: url(../img/icon/icon_circle_v.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .choice_wrap .subject_title.active::after{
+    transform: rotate(180deg);
+}
+
+.evaluation_data_page .choice_wrap .sec_depth{
+    display: none;
+}
+
+.evaluation_data_page .choice_wrap .sec_depth li{
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #888;
+}
+
+.evaluation_data_page .choice_wrap .sec_depth li.active,
+.evaluation_data_page .choice_wrap .sec_depth li:hover{
+    color: #FF9D54;
+}
+
+/* 메인컨텐츠-----------------------------------*/
+/* 페이지 상단 */
+.evaluation_data_page .page_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.evaluation_data_page .page_top .left,
+.evaluation_data_page .page_top .left div,
+.evaluation_data_page .page_top .right{
+    display: flex;
+    align-items: center;
+}
+
+.evaluation_data_page .page_top .left .grade{
+    margin-right: 18px;
+}
+
+.evaluation_data_page .page_top .left .grade,
+.evaluation_data_page .page_top .left .semester{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.evaluation_data_page .page_top .left .num{
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    margin-right: 15px;
+    font-weight: 600;
+    color: #FF7F21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffe7d5;
+}
+
+.evaluation_data_page .page_top .left .subject{
+    width: 117px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 100px;
+    color: #FF7F21;
+    background: #FFE7D4;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evaluation_data_page .page_top .right a,
+.evaluation_data_page .page_top .right button{
+    width: 92px;
+    height: 45px;
+    font-weight: 600;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evaluation_data_page .page_top .bank_btn{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.evaluation_data_page .page_top .error_btn{
+    font-size: 18px;
+}
+
+/* 팁박스 */
+.evaluation_data_page .tip_box{
+    margin-bottom: 30px;
+}
+
+.evaluation_data_page .tip_box::after{
+    background: url(../img/evaluation_data/book.png) no-repeat center center / contain;
+    width: 220px;
+    height: 100px;
+}
+
+/* 단원텝 */
+.evaluation_data_page .unit_tabs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 5px;
+}
+
+.evaluation_data_page .unit_tabs .tab{
+    width: 337px;
+    height: 50px;
+    border-radius: 45px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    background: #ddd;
+    color: #fff;
+}
+
+.evaluation_data_page .unit_tabs .tab.active{
+    background: #FF9D54;
+}
+
+.evaluation_data_page .unit_tabs .tab:nth-child(3n+1){
+    margin-left: 0;
+}
+
+/* 테이블 */
+.evaluation_data_page .table_wrap .align{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.evaluation_data_page .table_wrap .align:last-child{
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.evaluation_data_page .table_wrap .randomTest_making{
+    width: 172px;
+    height: 42px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.evaluation_data_page .table_wrap .align span{
+    font-size: 14px;
+    line-height: 140%;
+    color: #555;
+}
+
+.evaluation_data_page .table_wrap .custom_select_wrapper{
+    width: 182px;
+}
+
+.evaluation_data_page .table_wrap .empty_box {
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+}
+
+.evaluation_data_page .table_head {
+    margin-top: 15px;
+    background: #FFF6EE;
+    border-bottom: 1px solid #FF7F21;
+}
+
+.evaluation_data_page .table_head li {
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.evaluation_data_page .table_list {
+    border-bottom: 1px solid #ddd;
+}
+
+.evaluation_data_page .table_list li {
+    height: 50px;
+}
+
+.evaluation_data_page .table_list li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.evaluation_data_page .table_list li:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.evaluation_data_page .table_list button,
+.evaluation_data_page .table_list .download_btn {
+    width: 24px;
+    height: 24px;
+}
+
+.evaluation_data_page .table_list .preview_btn {
+    background: url(../img/icon/icon_search.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_list .download_btn {
+    background: url(../img/icon/icon_cloud.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_list .scrap_btn {
+    background: url(../img/icon/icon_star_empty.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_list .scrap_btn.active {
+    background: url(../img/icon/icon_star.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_wrap .allDownload_btn {
+    width: 117px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.evaluation_data_page .table_wrap li:nth-child(1){
+    width: 60px;
+}
+
+.evaluation_data_page .table_wrap li:nth-child(2){
+    width: 600px;
+}
+
+.evaluation_data_page .table_wrap .table_list li:nth-child(2){
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+.evaluation_data_page .table_wrap .table_list li:nth-child(2) span{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: block;
+    width: 520px;
+}
+
+.evaluation_data_page .table_wrap li:nth-child(3),
+.evaluation_data_page .table_wrap li:nth-child(4),
+.evaluation_data_page .table_wrap li:nth-child(5){
+    flex: 1;
+}
+
+.evaluation_data_page .table_wrap .table_list li:nth-child(2)::before{
+    content: '';
+    display: block;
+    width: 28px;
+    height: 33px;
+    margin-right: 15px;
+}
+
+.evaluation_data_page .table_wrap .table_list .hwp::before{
+    background: url(../img/icon/icon_hwp.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_wrap .table_list .jpg::before{
+    background: url(../img/icon/icon_jpg.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_wrap .table_list .pdf::before{
+    background: url(../img/icon/icon_pdf.svg) no-repeat center center / contain;
+}
+
+.evaluation_data_page .table_wrap .table_list .mp4::before{
+    background: url(../img/icon/icon_mp4.svg) no-repeat center center / contain;
+}
+
+/* 오류수정모달------------------------------------ */
+.errorModify_modal .modal_box{
+    width: 665px;
+    padding: 24px 20px;
+}
+
+.errorModify_modal .modal_title{
+    font-size: 16px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.errorModify_modal .comment{
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.errorModify_modal .select_area{
+    margin-top: 18px;
+    display: flex;
+}
+
+.errorModify_modal .custom_select_wrapper{
+    width: 182px;
+}
+
+.errorModify_modal .custom_select_trigger,
+.errorModify_modal .custom_option{
+    font-size: 14px;
+}
+
+.errorModify_modal .custom_select_wrapper:not(:last-child){
+    margin-right: 10px;
+}
+
+.errorModify_modal .input_area{
+    margin-top: 15px;
+}
+
+.errorModify_modal .input_area input[type=text]{
+    width: 100%;
+    font-size: 15px;
+}
+
+.errorModify_modal .input_area textarea{
+    font-size: 15px;
+    width: 100%;
+    height: 170px;
+    display: block;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.errorModify_modal .input_area textarea::placeholder{
+    color: #afafaf;
+}
+
+.errorModify_modal .upload{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.errorModify_modal #chooseFile{
+    display: none;
+}
+
+.errorModify_modal .upload_btn{
+    width: 117px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 17px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.errorModify_modal .loaded_files,
+.errorModify_modal .loaded_files li{
+    display: flex;
+    align-items: center;
+}
+
+.errorModify_modal .loaded_files{
+    flex-wrap: wrap;
+    width: 680px;
+}
+
+.errorModify_modal .loaded_files li:not(:last-child){
+    margin-right: 20px;
+}
+
+.errorModify_modal .loaded_files span{
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.errorModify_modal .loaded_files .delete_btn{
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    background: url(../img/icon/icon_close_btn.svg) no-repeat center center / contain;
+}
+
+.errorModify_modal .button_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.errorModify_modal .button_wrap button{
+    width: 195px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.errorModify_modal .button_wrap .cancel_btn{
+    margin-right: 10px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/tool.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/tool.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="tool_page timer">
+
+            <div class="wrap_inner">
+                <ul class="tool_nav">
+                    <li class="timer active">
+                        <a href="timer.html" class="link dal">
+                            타이머
+                        </a>
+                    </li>
+                    <li class="stopwatch">
+                        <a href="stopwatch.html" class="link dal">
+                            스톱워치
+                        </a>
+                    </li>
+                    <li class="picknum">
+                        <a href="picknum.html" class="link dal">
+                            번호 뽑기
+                        </a>
+                    </li>
+                    <li class="ladder">
+                        <a href="ladder.html" class="link dal">
+                            사다리타기
+                        </a>
+                    </li>
+                    <li class="board">
+                        <a href="board.html" class="link dal">
+                            칠판
+                        </a>
+                    </li>
+                    <li class="bell">
+                        <a href="bell.html" class="link dal">
+                            집중벨
+                        </a>
+                    </li>
+                </ul>
+                <section class="main_section">
+                    <div class="timer_wrap">
+                        <div class="timer_box">
+                            <input type="text" value="00" maxlength="2" id="minute" readonly>
+                        </div>
+                        <div class="timer_box">
+                            <input type="text" value="00" maxlength="2" id="second" readonly>
+                        </div>
+                    </div>
+                    <div class="timer_control">
+                        <button class="time_btn thirtySec">30초</button>
+                        <button class="time_btn oneMin">1분</button>
+                        <button class="time_btn threeMin">3분</button>
+                        <button class="time_btn fiveMin">5분</button>
+                        <button class="ellipse_btn start_btn">시작</button>
+                        <button class="ellipse_btn reset_btn">초기화</button>
+                    </div>
+                </section>
+                <div class="bottom_area">
+                    <button class="blind_btn">
+                        <div class="icon_box"></div>
+                        <span>깜깜이</span>
+                    </button>
+                    <button class="angle_btn">
+                        <div class="icon_box"></div>
+                        <span>각도기</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 타이머종료 모달 -->
+        <div class="modal_wrap message_modal timerEnd_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    시간 종료!
+                    <br>
+                    이제 선생님에게 집중해 주세요
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

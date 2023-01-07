@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="default_page">
+            <div class="wrap_inner">
+                <br>
+                <br>
+                <h3 style="font-size: 25px;">
+                    1. 버튼
+                </h3>
+                <br>
+                <button class="basic_btn orange">
+                    기본 오렌지컬러 버튼
+                </button>
+                <button class="basic_btn" disabled>
+                    기본 버튼 비활성
+                </button>
+                <button class="basic_btn white">
+                    기본 흰검컬러 버튼
+                </button>
+                <button class="basic_btn whiteOg">
+                    기본 흰오렌지 버튼
+                </button>
+                <button class="choice_btn">
+                    radius 100
+                </button>
+                <button class="choice_btn active">
+                    radius 100 active
+                </button>
+                <button class="circle_btn">
+                    1
+                </button>
+                <button class="circle_btn active">
+                    2
+                </button>
+                <br>
+                <br>
+                <h3 style="font-size: 25px;">
+                    2. 체크박스 라디오버튼
+                </h3>
+                <div class="chk_wrap">
+                    <input type="checkbox" id="chkbasic" class="chk">
+                    <label for="chkbasic">
+                        체크박스
+                    </label>
+                </div>
+                <div class="chk_wrap">
+                    <input type="radio" name="basic" id="radiobasic" class="radio">
+                    <label for="radiobasic">
+                        라디오
+                    </label>
+                    <input type="radio" name="basic" id="radiobasic2" class="radio">
+                    <label for="radiobasic2">
+                        라디오
+                    </label>
+                </div>
+                <br>
+                <br>
+                <h3 style="font-size: 25px;">
+                    3. 셀렉트박스
+                </h3>
+                <select name="select_ex" id="select_ex" class="custom_select sources" placeholder="셀렉트박스">
+                    <option value="" selected>option1</option>
+                    <option value="">option2</option>
+                    <option value="">option3</option>
+                </select>
+                <h3 style="font-size: 25px;">
+                    4. 페이지네이션
+                </h3>
+                <div class="pagenation">
+                    <div class="prev icon_box active"></div>
+                    <ul>
+                        <li class="num active">
+                            <span>1</span>
+                        </li>
+                        <li class="num">
+                            <span>2</span>
+                        </li>
+                        <li class="num">
+                            <span>3</span>
+                        </li>
+                        <li class="num">
+                            <span>4</span>
+                        </li>
+                        <li class="num">
+                            <span>5</span>
+                        </li>
+                    </ul>
+                    <div class="next icon_box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모달ex -->
+        <div class="modal_wrap message_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    이전 단계로 이동 시 입력하신 퀴즈는 삭제됩니다.
+                    <br>
+                    이동하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <didimdol-footer></didimdol-footer>
+    </div>
+</body>
+
+</html>

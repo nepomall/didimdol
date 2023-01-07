@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/my_page.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/my_page.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page my_page member_info edit">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="grade_setting.html" class="link basic_btn white">
+                            학년(과목) 설정
+                        </a>
+                        <a href="scrap_download_data.html" class="link basic_btn white">
+                            스크랩 자료
+                        </a>
+                        <a href="my_writing.html" class="link basic_btn white">
+                            내가 쓴 글
+                        </a>
+                        <a href="problem_bank.html" class="link basic_btn white">
+                            내 문제은행
+                        </a>
+                        <a href="member_info.html" class="link basic_btn orange">
+                            회원 정보 수정
+                        </a>
+                        <a href="withdrawal.html" class="link basic_btn white">
+                            회원 탈퇴
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <form action="">
+                        <fieldset>
+                            <legend>정보 수정</legend>
+
+                            <div class="info_box essential_info">
+                                <div class="info_title">
+                                    필수정보
+                                </div>
+                                <div class="info_area">
+                                    <ul class="certification">
+                                        <li class="input_title">
+                                            교사인증
+                                        </li>
+                                        <li class="input_text">
+                                            <!-- 미인증 시 not, 심사중 시 ing, 인증 완료 시 complete, 인증 실패 시 fail 클래스 추가 -->
+                                            <!-- 인증완료 시 교사인증 버튼 none 처리 -->
+                                            <div class="certification_status fail">
+                                                <span>인증실패</span>
+                                            </div>
+                                            <button class="basic_btn orange certification_btn">
+                                                교사인증
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <ul class="name">
+                                        <li class="input_title">
+                                            이름
+                                        </li>
+                                        <li class="input_text">
+                                            <input type="text" value="디딤돌" readonly>
+                                        </li>
+                                    </ul>
+                                    <ul class="id">
+                                        <li class="input_title">
+                                            아이디
+                                        </li>
+                                        <li class="input_text">
+                                            <input type="text" value="didim@email.com" readonly>
+                                        </li>
+                                    </ul>
+                                    <ul class="pw">
+                                        <li class="input_title">
+                                            비밀번호
+                                        </li>
+                                        <li class="input_text">
+                                            <input type="password" value="123456">
+                                            <input type="password" value="123456">
+                                            <p class="comment">
+                                                * 8~20자리 입력 / 영어 소문자 +숫자 + 특수문자 조합으로 입력이 가능합니다.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="email">
+                                        <li class="input_title">
+                                            이메일
+                                        </li>
+                                        <li class="input_text">
+                                            <div class="input_cover">
+                                                <div class="left">
+                                                    <input type="text" value="didimdol">
+                                                    <span>@</span>
+                                                    <input type="text" value="naver.com">
+                                                    <select name="select_address" id="select_address"
+                                                        class="custom_select sources" placeholder="직접입력">
+                                                        <option value="" selected>직접입력</option>
+                                                        <option value="">option2</option>
+                                                        <option value="">option3</option>
+                                                    </select>
+                                                </div>
+                                                <button class="basic_btn orange doubleCheck_btn">
+                                                    중복확인
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="phone">
+                                        <li class="input_title">
+                                            핸드폰
+                                        </li>
+                                        <li class="input_text">
+                                            <div class="input_cover">
+                                                <input type="text" class="phone_num" value="01012345678" readonly>
+                                                <button class="basic_btn orange modify_btn">
+                                                    수정
+                                                </button>
+                                            </div>
+                                            <div class="input_cover">
+                                                <div class="input_box">
+                                                    <input type="text" class="certify_num" placeholder="인증번호">
+                                                    <span>3:00</span>
+                                                </div>
+                                                <button class="basic_btn orange certification_btn" disabled>
+                                                    인증하기
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="address">
+                                        <li class="input_title">
+                                            주소
+                                        </li>
+                                        <li class="input_text">
+                                            <div class="input_cover">
+                                                <input type="text" value="1234">
+                                                <button class="basic_btn orange find_btn">
+                                                    찾기
+                                                </button>
+                                            </div>
+                                            <input type="text" value="디딤아파트">
+                                            <input type="text" value="101동 101호">
+                                        </li>
+                                    </ul>
+                                    <ul class="school">
+                                        <li class="input_title">
+                                            학교
+                                        </li>
+                                        <li class="input_text">
+                                            <div class="input_cover">
+                                                <input type="text" value="디딤돌 초등학교">
+                                                <button class="basic_btn orange find_btn">
+                                                    찾기
+                                                </button>
+                                            </div>
+                                            <input type="text" value="초등학교 주소 노출" readonly>
+                                            <select name="select_grade" id="select_grade" class="custom_select sources"
+                                                placeholder="1학년">
+                                                <option value="" selected>1학년</option>
+                                                <option value="">2학년</option>
+                                                <option value="">3학년</option>
+                                                <option value="">4학년</option>
+                                                <option value="">5학년</option>
+                                                <option value="">6학년</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="info_box optional_info">
+                                <div class="info_title">
+                                    선택정보
+                                </div>
+                                <div class="info_area">
+                                    <div class="chk_info subject">
+                                        <p class="title">
+                                            과목 (중복 선택 가능)
+                                        </p>
+                                        <div class="chk_area">
+                                            <div class="chk_wrap">
+                                                <input type="checkbox" id="subject_math" class="chk">
+                                                <label for="subject_math">
+                                                    수학
+                                                </label>
+                                            </div>
+                                            <div class="chk_wrap">
+                                                <input type="checkbox" id="subject_social" class="chk">
+                                                <label for="subject_social">
+                                                    사회
+                                                </label>
+                                            </div>
+                                            <div class="chk_wrap">
+                                                <input type="checkbox" id="subject_science" class="chk">
+                                                <label for="subject_science">
+                                                    과학
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chk_info marketing">
+                                        <p class="title">
+                                            마케팅 활용 및 정보 수신 동의
+                                        </p>
+                                        <div class="chk_area">
+                                            <div class="chk_wrap">
+                                                <input type="checkbox" id="marketing_sms" class="chk">
+                                                <label for="marketing_sms">
+                                                    SMS
+                                                </label>
+                                            </div>
+                                            <div class="chk_wrap">
+                                                <input type="checkbox" id="marketing_email" class="chk">
+                                                <label for="marketing_email">
+                                                    이메일
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button_wrap">
+                                <button class="basic_btn whiteOg cancel_btn">
+                                    취소
+                                </button>
+                                <button class="basic_btn orange save_btn">
+                                    저장
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <!-- 정보 저장완료 모달 -->
+        <div class="modal_wrap message_modal save_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    정보가 저장되었습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

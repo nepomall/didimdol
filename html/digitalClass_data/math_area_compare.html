@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type='text/javascript' src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/deigitalClass_game.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/digitalClass_game.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="deigitalClass_game gradeOne area">
+            <div class="wrap_inner">
+                <div class="head">
+                    <p>
+                        <span>디지털 수학</span>&ensp;1학년 1학기 - 넓이비교
+                    </p>
+                    <button class="help_btn"></button>
+                </div>
+                <div class="explain_box">
+                    <div class="comment">
+                        <h3>넓이 비교</h3>
+                        <p>비교할 물건을 골라 아래 비교 영역으로 드래그해 넣으세요.</p>
+                        <span>*최소 2개 최대3개 선택 가능</span>
+                    </div>
+                    <div class="button_wrap">
+                        <button class="copy_btn">
+                            링크복사
+                        </button>
+                        <button class="qr_btn">
+                            QR
+                        </button>
+                    </div>
+                </div>
+                <div class="game_wrap area">
+                    <div class="slide_wrap">
+                        <div class="game_slide">
+                            <div class="swiper-wrapper dragAndDrop">
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_1.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_2.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_3.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_4.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_5.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/area_img_5.svg" alt="">
+                                    </div>
+                                    <div class="answer"></div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="game_place">
+                        <div class="screen">
+                            <div class="overlap dragAndDrop">
+
+                            </div>
+                        </div>
+                        <span>비교할 물건을 넣어 주세요!</span>
+                        <div class="hint_box">
+                            <button class="close_btn"></button>
+                            <p class="comment">
+                                겹쳐 보았을 때 남는 부분이 있는 것이 더 넓습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom_area">
+                        <div class="left">
+                            <button class="reset_btn" disabled></button>
+                            <button class="hint_btn"></button>
+                        </div>
+                        <button class="compare_btn basic_btn orange" disabled>
+                            비교하기
+                        </button>
+                        <div class="right">
+                            <span class="kotra">퀴즈</span>
+                            <button class="next_btn" onclick="location.href='math_area_compare _quiz.html'"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 가이드 -->
+            <button class="guide_close"></button>
+            <div class="guide_comment link">
+                현재 화면을 학생들과 공유할 수 있어요!
+            </div>
+            <div class="guide_comment reset">
+                초기화
+            </div>
+            <div class="guide_comment tip">
+                클릭하시면 학습 TIP을 제공합니다.
+            </div>
+            <div class="guide_comment compare">
+                선택한 것들을 비교합니다.
+            </div>
+        </div>
+
+        <script>
+
+            // 노드 추가 감지
+            const screen = document.querySelector('.game_place .screen .overlap');
+            screen.addEventListener('DOMNodeInserted', function () {
+                $(this).find('.swiper-slide').removeClass('canDrag');
+                let boxNum = screen.childElementCount;
+                console.log(boxNum);
+
+                document.querySelector('.game_place span').style.display = "none";
+                if (boxNum == 0) {
+                    document.querySelector('.bottom_area .compare_btn').disabled = true;
+                };
+                if (boxNum >= 1) {
+                    document.querySelector('.bottom_area .compare_btn').disabled = false;
+                    document.querySelector('.bottom_area .reset_btn').disabled = false;
+                };
+                if (boxNum == 3) {
+                    $('.game_slide .swiper-slide').removeClass('canDrag');
+                };
+            });
+
+            // 넓이 비교 스크립트
+            let compareArray = [];
+            const compareBtn = document.querySelector('.game_wrap.area .compare_btn');
+            compareBtn.addEventListener('click', () => {
+                const box = document.querySelectorAll('.game_wrap.area .screen .swiper-slide');
+                box.forEach((item, idx) => {
+                    const imgObj = item.querySelectorAll('img');
+                    for (let i = 0; i < imgObj.length; i++) {
+                        const elObj = { el: imgObj[i], width: imgObj[i].offsetWidth, height: imgObj[i].offsetHeight, id: idx }
+                        compareArray.push(elObj);
+                    };
+                });
+
+                compareArray.sort((a, b) => {
+                    if (a.width > b.width) return 1;
+                    if (a.width === b.width) return 0;
+                    if (a.width < b.width) return -1;
+                });
+
+                console.log(compareArray[0], compareArray[compareArray.length - 1]);
+
+                let boxNum = screen.childElementCount;
+                $('.game_wrap.area .screen .swiper-slide .delete_btn').css('display', 'none');
+                if (boxNum == 2) {
+                    compareArray[0].el.parentNode.parentNode.classList.add('narrow');
+                    compareArray[compareArray.length - 1].el.parentNode.parentNode.classList.add('wide');
+
+                    document.querySelector('.narrow .answer').innerText = "더 좁다";
+                    document.querySelector('.wide .answer').innerText = "더 넓다";
+                };
+
+                if (boxNum == 3) {
+                    let biggestWidth = compareArray[compareArray.length - 1].width;
+                    let biggestHight = compareArray[compareArray.length - 1].height;
+                    const relativeBox = document.querySelector('.screen .overlap');
+                    const screen = document.querySelector('.screen');
+
+                    compareArray[0].el.parentNode.parentNode.style.cssText = `
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 3;
+                    `
+
+                    compareArray[1].el.parentNode.parentNode.style.cssText = `
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 2;
+                    `
+
+                    compareArray[2].el.parentNode.parentNode.style.cssText = `
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 1;
+                    `
+                    screen.style.cssText = `
+                        display : flex;
+                        justify-content : center;
+                        align-items: center;
+                    `
+                    relativeBox.style.cssText = `
+                        width: ${biggestWidth}px;
+                        height: ${biggestHight}px;
+                        position: relative;
+                    `
+                }
+            });
+
+        </script>
+
+    </div>
+</body>
+
+</html>

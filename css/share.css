@@ -1,0 +1,930 @@
+/* 나눔마당 공통----------------------------------- */
+.share_page .tip_box{
+    position: relative;
+    padding: 24px 30px 60px 30px;
+}
+
+.share_page .tip_box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 133px;
+    height: 122px;
+    background: url(../img/d_quiz/tip_img.png) no-repeat center center / contain;
+    bottom: 0;
+    right: 232px;
+}
+
+/* 선택구간 */
+.share_page .choice_wrap .choice_btn{
+    width: 137px;
+}
+
+.share_page .choice_box.semester,
+.share_page .choice_box.subject{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 테이블 */
+.share_page .table_wrap{
+    margin-top: 40px;
+}
+
+.share_page .table_wrap .align{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.share_page .table_wrap .top_area.align .link{
+    font-size: 16px;
+    color: #afafaf;
+}
+
+.share_page .table_wrap .top_area.align .link.active{
+    color: #222;
+}
+
+.share_page .table_wrap .top_area.align .link:not(:last-child){
+    margin-right: 22px;
+    position: relative;
+}
+
+.share_page .table_wrap .top_area.align .link:not(:last-child)::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #afafaf;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -12px;
+    position: absolute;
+}
+
+.share_page .table_wrap .custom_select_wrapper{
+    width: 140px;
+}
+
+.share_page .table_wrap .empty_box{
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+}
+
+.share_page .table_head{
+    margin-top: 15px;
+    background: #FFF6EE;
+    border-bottom: 1px solid #FF7F21;
+}
+
+.share_page .table_head li{
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.share_page .table_list{
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page .table_list li{
+    height: 50px;
+}
+
+.share_page .table_list li a{
+    display: block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.share_page .table_list li:not(:last-child){
+    border-right: 1px solid #ddd;
+}
+
+.share_page .table_head li:nth-child(1),
+.share_page .table_list li:nth-child(1){
+    width: 85px;
+    padding: 0 5px;
+}
+
+.share_page .table_head li:nth-child(2),
+.share_page .table_list li:nth-child(2){
+    width: 456px;
+    padding: 0 24px;
+}
+
+.share_page .table_head li:nth-child(3),
+.share_page .table_head li:nth-child(4),
+.share_page .table_head li:nth-child(5),
+.share_page .table_head li:nth-child(6),
+.share_page .table_list li:nth-child(3),
+.share_page .table_list li:nth-child(4),
+.share_page .table_list li:nth-child(5),
+.share_page .table_list li:nth-child(6){
+    width: 123px;
+    padding: 0 5px;
+}
+
+.share_page.newbie .table_wrap li:nth-child(2){
+    width: 534px;
+}
+
+.share_page.newbie .table_wrap li:nth-child(3),
+.share_page.newbie .table_wrap li:nth-child(4),
+.share_page.newbie .table_wrap li:nth-child(5){
+    width: auto;
+    flex: 1;
+}
+
+.share_page .table_wrap .regist_btn{
+    width: 122px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 디테일--------------------------------------------*/
+.share_page.detail .page_way{
+    margin-bottom: 40px;
+}
+
+.share_page.detail .category{
+    display: flex;
+}
+
+.share_page.detail .category li{
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #555;
+    background: #FFF;
+    border: 1px solid #555;
+}
+
+.share_page.detail .category li:not(:last-child){
+    margin-right: 14px;
+}
+
+/* 게시글 */
+.share_page.detail .post_wrap{
+    padding: 30px 0 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+}
+
+.share_page.detail .post_wrap .top_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share_page.detail .post_wrap .top_area .title{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.share_page.detail .post_wrap .top_area .right{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.detail .post_wrap .top_area span{
+    font-size: 18px;
+    color: #afafaf;
+}
+
+.share_page.detail .post_wrap .top_area .writer{
+    margin-right: 28px;
+    position: relative;
+}
+
+.share_page.detail .post_wrap .top_area .writer::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -14px;
+    background: #afafaf;
+}
+
+.share_page.detail .post_wrap .top_area a{
+    width: 117px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size:16px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.share_page.detail .post_wrap .top_area .edit_btn{
+    margin: 0 8px 0 20px;
+}
+
+.share_page.detail .post{
+    margin: 40px 0 50px;
+}
+
+.share_page.detail .post .img_box{
+    border-radius: 28px;
+    background: #d9d9d9;
+}
+
+.share_page.detail .post .img_box,
+.share_page.detail .post .img_box img{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.share_page.detail .post p{
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 40px;
+}
+
+.share_page.detail .extra_option{
+    margin-top: 50px;
+}
+
+.share_page.detail .extra_option li,
+.share_page.detail .extra_option .left,
+.share_page.detail .extra_option .right{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.detail .extra_option li{
+    justify-content: space-between;
+    background: #f6f6f6;
+    border-radius: 10px;
+    height: 48px;
+    padding: 0 20px;
+}
+
+.share_page.detail .extra_option li:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.share_page.detail .extra_option p{
+    width: 94px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF9d54;
+    background: #fff;
+    border: 1px solid #FF9D54;
+}
+
+.share_page.detail .extra_option span,
+.share_page.detail .extra_option a{
+    font-size: 16px;
+}
+
+.share_page.detail .extra_option a{
+    text-decoration: underline;
+}
+
+.share_page.detail .extra_option .right button,
+.share_page.detail .extra_option .right a{
+    width: 36px;
+    height: 36px;
+}
+
+.share_page.detail .extra_option .preview_btn{
+    background: url(../img/icon/icon_share_preview.svg) no-repeat center center / contain;
+}
+
+.share_page.detail .extra_option .download_btn{
+    background: url(../img/icon/icon_share_cloud.svg) no-repeat center center / contain;
+    margin-left: 12px;
+}
+
+.share_page.detail .post_num{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.share_page.detail .post_num li{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.detail .post_num .like{
+    cursor: pointer;
+}
+
+.share_page.detail .post_num li:first-child{
+    margin-right: 25px;
+}
+
+.share_page.detail .post_num li span{
+    font-size: 16px;
+    color: #555;
+}
+
+.share_page.detail .post_num li::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.share_page.detail .post_num .view::before{
+    background: url(../img/icon/icon_view_num.svg) no-repeat center center / contain;
+}
+
+.share_page.detail .post_num .like::before{
+    background: url(../img/icon/icon_like_num.svg) no-repeat center center / contain;
+}
+
+/* 댓글 */
+.share_page.detail .comment_write,
+.share_page.detail .comment_wrap .comment_list li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page.detail .comment_write textarea{
+    width: 100%;
+    height: 92px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 15px;
+    font-size: 16px;
+    background: #f6f6f6;
+}
+
+.share_page.detail .comment_write{
+    justify-content: flex-end;
+}
+
+.share_page.detail .comment_write .comment_num,
+.share_page.detail .comment_wrap .name{
+    font-size: 16px;
+}
+
+.share_page.detail .comment_wrap .name{
+    display: flex;
+    align-items: center;
+    color: #FF7F21;
+}
+
+.share_page.detail .comment_write span{
+    width: 100%;
+}
+
+.share_page.detail .comment_write .regist_btn{
+    width: 117px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.share_page.detail .comment_write.reply .name::before,
+.share_page.detail .comment_list .reply .name::before{
+    content: '';
+    display: block;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_reply.svg) no-repeat center center / contain;
+}
+
+.share_page.detail .comment_list .normal,
+.share_page.detail .comment_list .normal.reply{
+    justify-content: space-between;
+}
+
+.share_page.detail .comment_list .normal p{
+    width: 100%;
+    padding: 20px 5px 0;
+}
+
+.share_page.detail .comment_list .normal.reply p{
+    padding: 20px 45px 0;
+}
+
+.share_page.detail .comment_control{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.detail .comment_control button,
+.share_page.detail .comment_control .date{
+    font-size: 16px;
+    display: inline-block;
+    color: #555;
+}
+
+.share_page.detail .comment_control button:not(:first-child){
+    margin-left: 28px;
+    position: relative;
+}
+
+.share_page.detail .comment_control button:not(:first-child)::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -14px;
+    position: absolute;
+}
+
+.share_page.detail .comment_control .date{
+    margin-left: 23px;
+}
+
+.share_page.detail .post_nav{
+     margin-top: 70px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.share_page.detail .post_nav>div{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+}
+
+.share_page.detail .post_nav>div:first-child{
+    margin-bottom: 10px;
+}
+
+.share_page.detail .post_nav p{
+    font-size: 18px;
+    margin: 0 40px 0 20px;
+    font-weight: 500;
+    color: #444;
+}
+
+.share_page.detail .post_nav span{
+    font-size: 18px;
+    color: #444;
+}
+
+.share_page.detail .post_nav .icon_box{
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_side_open.svg) no-repeat center center / contain;
+}
+
+.share_page.detail .post_nav .before .icon_box{
+    transform: rotate(90deg);
+}
+
+.share_page.detail .post_nav .after .icon_box{
+    transform: rotate(-90deg);
+}
+
+.share_page.detail .post_nav .goList_btn{
+    width: 122px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+/* 게시글 작성 및 수정----------------------------- */
+.share_page.edit .regist_wrap{
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    background: #f6f6f6;
+}
+
+.share_page.edit .regist_wrap .title{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page.edit .regist_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 140px;
+}
+
+.share_page.edit .regist_box .half{
+    width: 400px;
+}
+
+.share_page.edit .regist_box p,
+.share_page.edit .regist_box input,
+.share_page.edit .regist_box textarea{
+    width: 100%;
+}
+
+.share_page.edit .regist_box{
+    padding-bottom: 25px;
+}
+
+.share_page.edit .regist_box:not(:last-child){
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page.edit .regist_box p{
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.share_page.edit .regist_box.essential p::after{
+    content: "*";
+    color: #FF7F21;
+}
+
+.share_page.edit .regist_box input,
+.share_page.edit .custom_select_trigger,
+.share_page.edit .custom_option,
+.share_page.edit .custom_options{
+    font-size: 18px;
+    border-color: #afafaf;
+}
+
+.share_page.edit .regist_box .editer_area{
+    width: 100%;
+    height: 336px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 20px;
+    border: 1px solid #afafaf;
+    background: #fff;
+}
+
+.share_page.edit .regist_box .upload{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.edit .regist_box #chooseFile{
+    display: none;
+}
+
+.share_page.edit .regist_box .upload_btn{
+    width: 117px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-right: 17px;
+    box-shadow: none;
+}
+
+.share_page.edit .regist_box .loaded_files,
+.share_page.edit .regist_box .loaded_files li{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.edit .regist_box .loaded_files{
+    flex-wrap: wrap;
+    width: 680px;
+}
+
+.share_page.edit .regist_box .loaded_files li:not(:last-child){
+    margin-right: 20px;
+}
+
+.share_page.edit .regist_box .loaded_files span{
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.share_page.edit .regist_box .loaded_files .delete_btn{
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    background: url(../img/icon/icon_close_btn.svg) no-repeat center center / contain;
+}
+
+.share_page.edit .regist_box.post_url .input_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share_page.edit .regist_box.post_url .input_box:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.share_page.edit .regist_box.post_url input{
+    width: 778px;
+}
+
+.share_page.edit .regist_box.post_url button{
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_plus_btn.svg) no-repeat center center / contain;
+}
+
+.share_page.edit .regist_box.post_url .remove_btn{
+    transform: rotate(45deg);
+}
+
+.share_page.edit .warning_box{
+    margin-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page.edit .warning_box .title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #FF1F1F;
+    display: flex;
+    align-items: center;
+}
+
+.share_page.edit .warning_box .title::before{
+    content:'';
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background:url(../img/icon/icon_exclamation_mark.svg) no-repeat center center / contain;
+}
+
+.share_page.edit .warning_box span{
+    font-size: 16px;
+    display: block;
+    padding: 0 10px;
+    line-height: 160%;
+    color: #444;
+}
+
+.share_page.edit .button_wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+}
+
+.share_page.newbie .button_wrap{
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+}
+
+.share_page.edit .button_wrap button{
+    width: 195px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.share_page.edit .button_wrap .cancel_btn{
+    margin-right: 10px;
+}
+
+/* 새내기 q&a--------------------------------- */
+/* 게시글 등록 */
+.share_page.diary .diary_regist{
+    padding: 20px;
+    margin: 20px 0 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #fff;
+    border: 1px solid #FF9D54;
+}
+
+.share_page.diary .diary_regist textarea{
+    width: 100%;
+    height: 142px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #fff2ea;
+}
+
+.share_page.diary .diary_regist .regist_btn{
+    width: 117px;
+    height: 35px;
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* 게시글 목록 */
+.share_page.diary .diary_post_wrap{
+    padding: 20px;
+    border-radius: 20px;
+    background: #F6F6F6;
+}
+
+.share_page.diary .diary_box{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    margin-bottom: 60px;
+}
+
+.share_page.diary .diary_box .comment_area p{
+    font-size: 18px;
+    line-height: 140%;
+    padding-bottom: 50px;
+}
+
+.share_page.diary .diary_box .comment_option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share_page.diary .diary_box .comment_option .left,
+.share_page.diary .diary_box .comment_control{
+    display: flex;
+    align-items: center;
+}
+
+.share_page.diary .diary_box .comment_control{
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.share_page.diary .diary_box .like_btn{
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url(../img/icon/icon_like_num.svg) no-repeat center center / contain;
+}
+
+.share_page.diary .diary_box .like_btn.active{
+    background: url(../img/icon/icon_like_num_og.svg) no-repeat center center / contain;
+}
+
+.share_page.diary .diary_box .comment_control button,
+.share_page.diary .diary_box .comment_control .date{
+    font-size: 16px;
+    display: inline-block;
+    color: #444;
+}
+
+.share_page.diary .comment_list .comment_control button,
+.share_page.diary .comment_list .comment_control .date{
+    color: #888;
+}
+
+.share_page.diary .diary_box .comment_control button:not(:first-child){
+    margin-left: 28px;
+    position: relative;
+}
+
+.share_page.diary .diary_box .comment_control button:not(:first-child)::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -14px;
+    position: absolute;
+}
+
+.share_page.diary .diary_box .comment_control .date{
+    margin-left: 23px;
+}
+
+.share_page.diary .diary_box .comment_list{
+    margin-top: 25px;
+    border-top: 1px solid #FF9D54;
+}
+
+.share_page.diary .diary_box .comment_list li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.share_page.diary .diary_box .comment_list li:not(:last-child){
+    border-bottom: 1px solid #ddd;
+}
+
+.share_page.diary .diary_box .comment_list textarea{
+    width: 100%;
+    height: 92px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 15px;
+    font-size: 16px;
+    background: #f6f6f6;
+}
+
+.share_page.diary .diary_box .comment_write{
+    justify-content: flex-end;
+}
+
+.share_page.diary .diary_box .name{
+    font-size: 16px;
+}
+
+.share_page.diary .diary_box .name{
+    display: flex;
+    align-items: center;
+    color: #FF7F21;
+}
+
+.share_page.diary .diary_box .comment_write span{
+    width: 100%;
+}
+
+.share_page.diary .diary_box .regist_btn{
+    width: 117px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.share_page.diary .diary_box .comment_list .normal,
+.share_page.diary .diary_box .comment_list .normal.reply{
+    justify-content: space-between;
+}
+
+.share_page.diary .diary_box .comment_list .normal p{
+    width: 100%;
+    padding: 0 0 25px;
+    line-height: 140%;
+}
+
+.share_page.diary .diary_box .comment_list .normal.reply p{
+    padding-left: 40px;
+    position: relative;
+}
+
+.share_page.diary .diary_box .comment_list .normal.reply p::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_reply.svg) no-repeat center center / contain;
+}
+
+.share_page.diary .diary_post_wrap .more_view{
+    width: 147px;
+    height: 50px;
+    font-size: 21px;
+    border-radius: 100px;
+    margin: auto;
+    font-weight: 600;
+}

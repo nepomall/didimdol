@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/d_quiz.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/d_quiz.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="d_quiz_page make stepTwo">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>D퀴즈</span>
+                    </div>
+                    <button class="logout_btn"></button>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="d_quiz_main.html" class="link basic_btn white">
+                            홈
+                        </a>
+                        <a href="d_quiz_make_stepOne.html" class="link basic_btn orange">
+                            퀴즈 만들기
+                        </a>
+                        <a href="d_quiz_library.html" class="link basic_btn white">
+                            라이브러리
+                        </a>
+                        <a href="d_quiz_my.html" class="link basic_btn white">
+                            마이 퀴즈
+                        </a>
+                        <a href="d_quiz_report.html" class="link basic_btn white">
+                            퀴즈 리포트
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <div class="step_box">
+                        <div class="basic_btn whiteOg step_num">
+                            STEP 2
+                        </div>
+                        <span>
+                            * 만드실 퀴즈의 기본 정보 및 문항 수를 설정해 주세요. 정보 중 *은 필수 입력 정보 입니다.
+                        </span>
+                    </div>
+                    <div class="info_wrap">
+                        <div class="info_box">
+                            <ul class="title">
+                                <li>
+                                    과목
+                                </li>
+                                <li>
+                                    학년
+                                </li>
+                                <li>
+                                    학기
+                                </li>
+                            </ul>
+                            <ul class="text">
+                                <li>
+                                    <span>
+                                        수학
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        1학년
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        1학기
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="title">
+                                <li>
+                                    단원
+                                </li>
+                                <li>
+                                    제목
+                                </li>
+                                <li>
+                                    문항
+                                </li>
+                            </ul>
+                            <ul class="text">
+                                <li>
+                                    <span>
+                                        단원명
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        초등 수학 2-1-1단원 연산퀴즈
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        20 문항
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="basic_btn orange goBack_btn">
+                            이전
+                        </button>
+                    </div>
+                    <div class="make_wrap">
+                        <div class="make_box">
+                            <div class="num">
+                                <span class="kotra">1</span>
+                            </div>
+                            <div class="tab_wrap">
+                                <div class="tabs">
+                                    <div class="tab ox">
+                                        O X
+                                    </div>
+                                    <div class="tab multiple">
+                                        선다형
+                                    </div>
+                                    <div class="tab short_answer">
+                                        단답형
+                                    </div>
+                                    <div class="tab shape">
+                                        초성형
+                                    </div>
+                                    <div class="tab matching">
+                                        매칭형
+                                    </div>
+                                    <button class="delete_btn"></button>
+                                </div>
+                                <div class="question_wrap">
+                                    <div class="img_upload_box">
+                                        <div class="img_box">
+                                            <img src="../../img/d_quiz/somenail.jpg" alt="">
+                                            <button type="button" class="x_btn"></button>
+                                        </div>
+                                        <!-- 이미지 업로드 로딩중 일때 loading class 추가 -->
+                                        <div class="img_box loading">
+                                            <img src="../../img/d_quiz/somenail.jpg" alt="">
+                                            <button type="button" class="x_btn"></button>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <textarea placeholder="질문을 입력하세요.&#13;&#10;최대 100자까지 입력 가능합니다."></textarea>
+                                    </div>
+                                    <span class="warning">
+                                        질문은 최대 100자까지 입력 가능합니다.
+                                    </span>
+                                    <div class="contents">
+                                        <div class="content ox">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="radio_wrap">
+                                                        <input type="radio" name="ox" id="o" class="radio">
+                                                        <label for="o" class="o_img"></label>
+                                                        <input type="radio" name="ox" id="x" class="radio">
+                                                        <label for="x" class="x_img"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content multiple">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="checkbox" class="chk">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="checkbox" id="chkbasic" class="chk">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="warning">보기는 최대 10개까지 생성할 수 있습니다.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content short_answer">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="comment">
+                                                        * 정답의 경우의 수가 여러 개라면 ‘#’을 통해 입력해 주세요.
+                                                        <br>
+                                                        Ex) 10개#10개#열개
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content shape">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    초성
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="초성을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                    </div>
+                                                    <span class="comment">
+                                                        별표(*)를 입력하시면 빈칸으로 제공됩니다.
+                                                        <br>
+                                                        Ex) 질문 : 2쌍의 대변이 각각 평행한 사각형은?
+                                                        <br>
+                                                        &ensp;초성 : ㅍㅎㅅㅂㅎ
+                                                    </span>
+                                                    <br>
+                                                    <br>
+                                                    <span class="warning">
+                                                        초성은 최대 30자까지 입력 가능합니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    미리보기
+                                                </div>
+                                                <div class="mid">
+                                                    <ul class="preview">
+                                                        <li>
+                                                            <span>
+                                                                ㅍ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅎ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅅ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅂ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅎ
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="초성을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                    </div>
+                                                    <span class="warning">
+                                                        정답은 최대 30자까지 입력 가능합니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content matching">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="내용을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="내용을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="warning">내용은 최대 30자까지 입력 가능합니다.</span>
+                                                    <br>
+                                                    <br>
+                                                    <span class="comment">
+                                                        * 내용 입력 중 정답은 괄호 안에 작성하세요. 괄호 안의 텍스트는 빈칸으로 처리되며, 보기로 제공됩니다.
+                                                        <br>
+                                                        Ex) 90° 보다 큰 각은 (둔각) 입니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="upload">
+                                            <label for="chooseFile_1" class="upload_btn">이미지 첨부</label>
+                                            <input type="file" id="chooseFile_1" accept="image/*" multiple />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="basic_btn whiteOg quiz_add_btn">
+                                퀴즈추가
+                            </button>
+                        </div>
+                        <!-- 마지막 박스에 last_box class 추가 -->
+                        <div class="make_box last_box">
+                            <div class="num">
+                                <span class="kotra">2</span>
+                            </div>
+                            <div class="tab_wrap">
+                                <div class="tabs">
+                                    <div class="tab ox">
+                                        O X
+                                    </div>
+                                    <div class="tab multiple">
+                                        선다형
+                                    </div>
+                                    <div class="tab short_answer">
+                                        단답형
+                                    </div>
+                                    <div class="tab shape">
+                                        초성형
+                                    </div>
+                                    <div class="tab matching">
+                                        매칭형
+                                    </div>
+                                    <button class="delete_btn"></button>
+                                </div>
+                                <div class="question_wrap">
+                                    <div class="img_upload_box">
+                                        <div class="img_box">
+                                            <img src="../../img/d_quiz/somenail.jpg" alt="">
+                                            <button type="button" class="x_btn"></button>
+                                        </div>
+                                        <!-- 이미지 업로드 로딩중 일때 loading class 추가 -->
+                                        <div class="img_box loading">
+                                            <img src="../../img/d_quiz/somenail.jpg" alt="">
+                                            <button type="button" class="x_btn"></button>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <textarea placeholder="질문을 입력하세요.&#13;&#10;최대 100자까지 입력 가능합니다."></textarea>
+                                    </div>
+                                    <span class="warning">
+                                        질문은 최대 100자까지 입력 가능합니다.
+                                    </span>
+                                    <div class="contents">
+                                        <div class="content ox">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="radio_wrap">
+                                                        <input type="radio" name="ox" id="o" class="radio">
+                                                        <label for="o" class="o_img"></label>
+                                                        <input type="radio" name="ox" id="x" class="radio">
+                                                        <label for="x" class="x_img"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content multiple">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="checkbox" class="chk">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="checkbox" id="chkbasic" class="chk">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="warning">보기는 최대 10개까지 생성할 수 있습니다.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content short_answer">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="보기는 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="comment">
+                                                        * 정답의 경우의 수가 여러 개라면 ‘#’을 통해 입력해 주세요.
+                                                        <br>
+                                                        Ex) 10개#10개#열개
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content shape">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    초성
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="초성을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                    </div>
+                                                    <span class="comment">
+                                                        별표(*)를 입력하시면 빈칸으로 제공됩니다.
+                                                        <br>
+                                                        Ex) 질문 : 2쌍의 대변이 각각 평행한 사각형은?
+                                                        <br>
+                                                        &ensp;초성 : ㅍㅎㅅㅂㅎ
+                                                    </span>
+                                                    <br>
+                                                    <br>
+                                                    <span class="warning">
+                                                        초성은 최대 30자까지 입력 가능합니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    미리보기
+                                                </div>
+                                                <div class="mid">
+                                                    <ul class="preview">
+                                                        <li>
+                                                            <span>
+                                                                ㅍ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅎ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅅ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅂ
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                ㅎ
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="초성을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                    </div>
+                                                    <span class="warning">
+                                                        정답은 최대 30자까지 입력 가능합니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content matching">
+                                            <div class="one_box">
+                                                <div class="left">
+                                                    답변
+                                                </div>
+                                                <div class="mid">
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="내용을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control x"></button>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <input type="text" placeholder="내용을 입력하세요. 최대 30자까지 입력 가능합니다.">
+                                                        <button class="example_control plus"></button>
+                                                    </div>
+                                                    <span class="warning">내용은 최대 30자까지 입력 가능합니다.</span>
+                                                    <br>
+                                                    <br>
+                                                    <span class="comment">
+                                                        * 내용 입력 중 정답은 괄호 안에 작성하세요. 괄호 안의 텍스트는 빈칸으로 처리되며, 보기로 제공됩니다.
+                                                        <br>
+                                                        Ex) 90° 보다 큰 각은 (둔각) 입니다.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="upload">
+                                            <label for="chooseFile_2" class="upload_btn">이미지 첨부</label>
+                                            <input type="file" id="chooseFile_2" accept="image/*" multiple />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="basic_btn whiteOg quiz_add_btn">
+                                퀴즈추가
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bottom_area">
+                        <div class="chk_wrap share_chk">
+                            <input type="checkbox" id="share" class="chk">
+                            <label for="share">
+                                라이브러리 공유
+                            </label>
+                            <span>(라이브러리 공유에 동의하시면 다른 선생님들과 퀴즈를 공유 합니다.)</span>
+                        </div>
+                        <button type="button" class="basic_btn orange save_btn">
+                            저장
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- 모달 -->
+        <!-- 퀴즈 제한 20개 안내 모달 -->
+        <div class="modal_wrap message_modal quizlimit_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    퀴즈는 20개까지 만들 수 있습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 정답 선택 안내 모달 -->
+        <div class="modal_wrap message_modal correctSet_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    1번 문항의 정답이 선택되지 않았습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 이전페이지 이동 모달 -->
+        <div class="modal_wrap message_modal goBack_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    이전 단계로 이동 시 입력하신 퀴즈는 삭제됩니다.
+                    <br>
+                    이동하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn"
+                        onclick="location.href='d_quiz_make_stepOne.html'">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 퀴즈 유형 변경 모달 -->
+        <div class="modal_wrap message_modal typeChange_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    퀴즈 유형 변경 시 작성하신 문제는 삭제됩니다.
+                    <br>
+                    변경 하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 퀴즈삭제 모달 -->
+        <div class="modal_wrap message_modal quizDelete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    퀴즈를 삭제 하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 보기 제한안내 모달 -->
+        <div class="modal_wrap message_modal previewLimit_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    보기는 최대 10개까지 생성할 수 있습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 문항 수 안내 모달 -->
+        <div class="modal_wrap message_modal problemNum_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    문항수가 채워지지 않았습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

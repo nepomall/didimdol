@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type='text/javascript' src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/deigitalClass_game.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/digitalClass_game.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="deigitalClass_game gradeOne weight">
+            <div class="wrap_inner">
+                <div class="head">
+                    <p>
+                        <span>디지털 수학</span>&ensp;1학년 1학기 - 무게비교
+                    </p>
+                    <button class="help_btn"></button>
+                </div>
+                <div class="explain_box">
+                    <div class="comment">
+                        <h3>무게 비교</h3>
+                        <p>비교할 물건을 골라 아래 비교 영역으로 드래그해 넣으세요.</p>
+                        <span>*최소 2개 최대3개 선택 가능</span>
+                    </div>
+                    <div class="button_wrap">
+                        <button class="copy_btn">
+                            링크복사
+                        </button>
+                        <button class="qr_btn">
+                            QR
+                        </button>
+                    </div>
+                </div>
+                <div class="game_wrap weight">
+                    <div class="slide_wrap">
+                        <div class="game_slide">
+                            <div class="swiper-wrapper dragAndDrop">
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_5.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide canDrag">
+                                    <button class="delete_btn"></button>
+                                    <div class="img_box">
+                                        <img src="../../img/digitalClass/weight_img_5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="game_place">
+                        <div class="screen">
+                            <div class="compare_product">
+                                <div class="product_area dragAndDrop">
+
+                                </div>
+                                <div class="scale"></div>
+                            </div>
+                            <div class="compare_product on">
+                                <div class="product_area">
+                                    <div class="swiper-slide light">
+                                        <div class="img_box">
+                                            <img src="../../img/digitalClass/weight_img_4.svg" alt="">
+                                            <div class="answer">가장 가볍다</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide heavy">
+                                        <div class="img_box">
+                                            <img src="../../img/digitalClass/weight_img_2.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scale"></div>
+                            </div>
+                            <div class="compare_product on">
+                                <div class="product_area">
+                                    <div class="swiper-slide light">
+                                        <div class="img_box">
+                                            <img src="../../img/digitalClass/weight_img_2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide heavy">
+                                        <div class="img_box">
+                                            <img src="../../img/digitalClass/weight_img_5.svg" alt="">
+                                            <div class="answer">가장 무겁다</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scale"></div>
+                            </div>
+                        </div>
+                        <span>비교할 물건을 넣어 주세요!</span>
+                        <div class="hint_box">
+                            <button class="close_btn"></button>
+                            <p class="comment">
+                                아래로 내려간 쪽이 더 무겁습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom_area">
+                        <div class="left">
+                            <button class="reset_btn" disabled></button>
+                            <button class="hint_btn"></button>
+                        </div>
+                        <button class="compare_btn basic_btn orange" disabled>
+                            비교하기
+                        </button>
+                        <div class="right">
+                            <span class="kotra">퀴즈</span>
+                            <button class="next_btn" onclick="location.href='math_weight_compare _quiz.html'"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 가이드 -->
+                <button class="guide_close"></button>
+                <div class="guide_comment link">
+                    현재 화면을 학생들과 공유할 수 있어요!
+                </div>
+                <div class="guide_comment reset">
+                    초기화
+                </div>
+                <div class="guide_comment tip">
+                    클릭하시면 학습 TIP을 제공합니다.
+                </div>
+                <div class="guide_comment compare">
+                    선택한 것들을 비교합니다.
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            // 노드 추가 감지
+            const screen = document.querySelector('.game_place .product_area');
+            screen.addEventListener('DOMNodeInserted', function () {
+                $(this).find('.swiper-slide').removeClass('canDrag');
+                let boxNum = screen.childElementCount;
+                console.log(boxNum);
+
+                document.querySelector('.game_place span').style.display = "none";
+                if (boxNum == 0) {
+                    document.querySelector('.bottom_area .compare_btn').disabled = true;
+                };
+                if (boxNum >= 1) {
+                    document.querySelector('.bottom_area .compare_btn').disabled = false;
+                    document.querySelector('.bottom_area .reset_btn').disabled = false;
+                };
+                if (boxNum == 3) {
+                    $('.game_slide .swiper-slide').removeClass('canDrag');
+                };
+            });
+
+            // 비교하기 클릭
+            const compareBtn = document.querySelector('.compare_btn');
+
+            compareBtn.addEventListener('click', () => {
+                document.querySelector('.compare_product:nth-child(1)').style.display = "none";
+
+                const compareBox = document.querySelectorAll('.compare_product.on');
+                const scaleNum = compareBox.length;
+
+                compareBox.forEach((item) => {
+                    item.style.display = "block";
+
+                    if (scaleNum === 2) {
+                        item.style.width = '480px';
+                    };
+                });
+            })
+
+
+        </script>
+
+    </div>
+</body>
+
+</html>

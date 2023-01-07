@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/tool.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/tool.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="tool_page stopwatch">
+
+            <div class="wrap_inner">
+                <ul class="tool_nav">
+                    <li class="timer">
+                        <a href="timer.html" class="link dal">
+                            타이머
+                        </a>
+                    </li>
+                    <li class="stopwatch active">
+                        <a href="stopwatch.html" class="link dal">
+                            스톱워치
+                        </a>
+                    </li>
+                    <li class="picknum">
+                        <a href="picknum.html" class="link dal">
+                            번호 뽑기
+                        </a>
+                    </li>
+                    <li class="ladder">
+                        <a href="ladder.html" class="link dal">
+                            사다리타기
+                        </a>
+                    </li>
+                    <li class="board">
+                        <a href="board.html" class="link dal">
+                            칠판
+                        </a>
+                    </li>
+                    <li class="bell">
+                        <a href="bell.html" class="link dal">
+                            집중벨
+                        </a>
+                    </li>
+                </ul>
+                <section class="main_section">
+                    <div class="left">
+                        <input type="text" class="title_input" placeholder="제목을 작성해 주세요.">
+                        <div class="timer_wrap">
+                            <div class="timer_box">
+                                <input type="text" value="00" maxlength="2" id="minute" readonly>
+                            </div>
+                            <div class="timer_box">
+                                <input type="text" value="00" maxlength="2" id="second" readonly>
+                            </div>
+                        </div>
+                        <div class="timer_control">
+                            <button class="ellipse_btn start_btn">시작</button>
+                            <button class="ellipse_btn record_btn">기록</button>
+                            <button class="ellipse_btn reset_btn">초기화</button>
+                        </div>
+                    </div>
+                    <div class="record_box">
+                        <h3 class="title">기록</h3>
+                        <ul class="record_list">
+                            <li>
+                                <p class="num">1</p>
+                                <p class="record">00:00.000</p>
+                                <button class="delete_btn"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="bottom_area">
+                    <button class="blind_btn">
+                        <div class="icon_box"></div>
+                        <span>깜깜이</span>
+                    </button>
+                    <button class="angle_btn">
+                        <div class="icon_box"></div>
+                        <span>각도기</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

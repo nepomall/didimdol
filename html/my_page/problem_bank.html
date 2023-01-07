@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/my_page.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/my_page.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page my_page bank">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="grade_setting.html" class="link basic_btn white">
+                            학년(과목) 설정
+                        </a>
+                        <a href="scrap_download_data.html" class="link basic_btn white">
+                            스크랩 자료
+                        </a>
+                        <a href="my_writing.html" class="link basic_btn white">
+                            내가 쓴 글
+                        </a>
+                        <a href="problem_bank.html" class="link basic_btn orange">
+                            내 문제은행
+                        </a>
+                        <a href="member_info.html" class="link basic_btn white">
+                            회원 정보 수정
+                        </a>
+                        <a href="withdrawal.html" class="link basic_btn white">
+                            회원 탈퇴
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>마이클래스</span>
+                        <span>내 문제은행</span>
+                    </div>
+                    <div class="table_wrap">
+                        <ul class="table_head">
+                            <li>
+                                <input type="checkbox" id="chkAll" class="chk">
+                            </li>
+                            <li>
+                                <span>자료명</span>
+                            </li>
+                            <li>
+                                <span>생성일</span>
+                            </li>
+                            <li>
+                                <span>문항 수</span>
+                            </li>
+                            <li>
+                                <span>미리보기</span>
+                            </li>
+                            <li>
+                                <span>다운로드</span>
+                            </li>
+                        </ul>
+                        <div class="table_body">
+                            <!-- 게시글 없을 시 -->
+                            <!-- <div class="empty_box">
+                                게시글이 없습니다.
+                            </div> -->
+                            <!-- 리스트 -->
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>파일명.jpg</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn"></a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>파일명.jpg</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="align">
+                            <button class="basic_btn orange download_all" disabled>
+                                선택 파일 다운로드
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/share.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/share.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page share_page manage edit">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="class_data_share.html" class="link basic_btn white">
+                            수업 자료 공유
+                        </a>
+                        <a href="class_manage_share.html" class="link basic_btn orange">
+                            학급 운영 공유
+                        </a>
+                        <a href="class_newbie_share.html" class="link basic_btn white">
+                            새내기 Q&A
+                        </a>
+                        <a href="class_diary.html" class="link basic_btn white">
+                            수업 일기
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>나눔 마당</span>
+                        <span>학급 운영 공유</span>
+                    </div>
+                    <div class="regist_wrap">
+                        <h3 class="title">학급 운영 공유 글등록/수정</h3>
+                        <div class="regist_box essential">
+                            <div class="grade half">
+                                <p>학년</p>
+                                <select name="select_grade" id="select_grade" class="custom_select sources"
+                                    placeholder="학년">
+                                    <option value="" selected>1학년</option>
+                                    <option value="">2학년</option>
+                                    <option value="">3학년</option>
+                                    <option value="">4학년</option>
+                                    <option value="">5학년</option>
+                                    <option value="">6학년</option>
+                                </select>
+                            </div>
+                            <div class="semester half">
+                                <p>학기</p>
+                                <select name="select_semester" id="select_semester" class="custom_select sources"
+                                    placeholder="학기">
+                                    <option value="" selected>1학기</option>
+                                    <option value="">2학기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="regist_box essential">
+                            <div class="subject half">
+                                <p>과목</p>
+                                <select name="select_subject" id="select_subject" class="custom_select sources"
+                                    placeholder="과목">
+                                    <option value="" selected>국어</option>
+                                    <option value="">수학</option>
+                                    <option value="">사회</option>
+                                    <option value="">과학</option>
+                                    <option value="">영어</option>
+                                    <option value="">계기</option>
+                                    <option value="">기타</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="regist_box post_title essential full">
+                            <p>제목</p>
+                            <input type="text" class="title_input" placeholder="제목을 입력해 주세요.">
+                        </div>
+                        <div class="regist_box post_content essential">
+                            <p>내용</p>
+                            <div class="editer_area">
+                                에디터 영역
+                            </div>
+                        </div>
+                        <div class="regist_box post_file full">
+                            <p>첨부파일</p>
+                            <div class="upload">
+                                <label for="chooseFile" class="basic_btn orange upload_btn">파일 첨부</label>
+                                <input type="file" id="chooseFile" accept="" multiple />
+                                <ul class="loaded_files">
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="regist_box post_url full">
+                            <p>Url</p>
+                            <div class="input_box">
+                                <input type="text" placeholder="Url을 입력해 주세요.">
+                                <button class="remove_btn"></button>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="Url을 입력해 주세요.">
+                                <button class="add_btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warning_box">
+                        <h3 class="title">저작권 관련 유의사항</h3>
+                        <span>
+                            - 나눔 마당 자료 등록 시 저작권 관련 사항을 주의해 주세요.
+                            <br>
+                            - 나눔 마당의 올리는 모든 자료는 저작권자의 허가가 있어야 하므로 업로드할 때 주의해 주세요!
+                        </span>
+                    </div>
+                    <div class="button_wrap">
+                        <button class="basic_btn whiteOg cancel_btn">취소</button>
+                        <button class="basic_btn orange regist_btn">등록</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 게시물 삭제 모달 -->
+        <div class="modal_wrap message_modal cancel_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    작성 중 페이지 이동시 내용이 전부 삭제됩니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 파일 형식 모달 -->
+        <div class="modal_wrap message_modal formChk_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    지원하는 파일 형식이 아닙니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 등록 완료 모달 -->
+        <div class="modal_wrap message_modal registComplete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    등록이 완료되었습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

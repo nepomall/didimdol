@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/event.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page event_page detail">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="event_ing.html" class="link basic_btn orange">
+                            진행중인 이벤트
+                        </a>
+                        <a href="event_end.html" class="link basic_btn white">
+                            종료된 이벤트
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>이벤트</span>
+                        <span>진행중인 이벤트</span>
+                    </div>
+
+                    <!-- 게시글 -->
+                    <div class="post_wrap">
+                        <div class="top_area">
+                            <h3 class="title">이벤트 제목 TEXT입니다.</h3>
+                            <div class="right">
+                                <!-- <span class="end">(종료된 이벤트 입니다.)</span> -->
+                                <span class="date">0000. 00. 00 ~ 0000. 00. 00</span>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="img_box">
+                                <img src="../../img/digitalClass/big_plain.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_nav">
+                        <div class="before">
+                            <div class="icon_box"></div>
+                            <p>이전글</p>
+                            <span>이전 글 제목입니다.</span>
+                        </div>
+                        <div class="after">
+                            <div class="icon_box"></div>
+                            <p>다음글</p>
+                            <span>다음 글 제목입니다.</span>
+                        </div>
+                        <a href="event_ing.html" class="basic_btn orange link goList_btn">목록</a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

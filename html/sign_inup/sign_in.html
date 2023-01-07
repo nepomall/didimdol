@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/sign_inup.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/sign_inup.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+
+        <div id="wrap_content" class="sign_page in">
+            <div class="left_bg"></div>
+            <div class="form_wrap">
+                <form action="">
+                    <legend>
+                        <span>dear.샘</span>에 오신 선생님 환영합니다 :D
+                    </legend>
+
+                    <ul>
+                        <li>
+                            <input type="text" class="id_input" placeholder="아이디를 입력해 주세요.">
+                        </li>
+                        <li>
+                            <input type="password" class="pw_input" placeholder="비밀번호를 입력해 주세요.">
+                        </li>
+                    </ul>
+                    <span class="warning">아이디 또는 비밀번호를 확인해 주세요.</span>
+                    <div class="sign_in_option">
+                        <div class="chk_wrap">
+                            <input type="checkbox" id="id_save" class="chk">
+                            <label for="id_save">
+                                아이디 저장
+                            </label>
+                        </div>
+                        <a href="agree_terms.html" class="link">
+                            회원가입
+                        </a>
+                    </div>
+                    <button type="button" class="basic_btn orange login_btn" disabled>
+                        로그인
+                    </button>
+                    <div class="forgot">
+                        <a href="id_pw_find.html" class="link forgot">
+                            아이디 또는 비밀번호를 잊어버리셨나요?
+                        </a>
+                    </div>
+                </form>
+                <div class="img_box"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

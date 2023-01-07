@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/d_quiz.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/d_quiz.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="d_quiz_page make stepOne">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>D퀴즈</span>
+                    </div>
+                    <button class="logout_btn"></button>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="d_quiz_main.html" class="link basic_btn white">
+                            홈
+                        </a>
+                        <a href="d_quiz_make_stepOne.html" class="link basic_btn orange">
+                            퀴즈 만들기
+                        </a>
+                        <a href="d_quiz_library.html" class="link basic_btn white">
+                            라이브러리
+                        </a>
+                        <a href="d_quiz_my.html" class="link basic_btn white">
+                            마이 퀴즈
+                        </a>
+                        <a href="d_quiz_report.html" class="link basic_btn white">
+                            퀴즈 리포트
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <div class="step_box">
+                        <div class="basic_btn whiteOg step_num">
+                            STEP 1
+                        </div>
+                        <span>
+                            * 만드실 퀴즈의 기본 정보 및 문항 수를 설정해 주세요. 정보 중 *은 필수 입력 정보 입니다.
+                        </span>
+                    </div>
+                    <div class="quiz_option">
+                        <div class="option_box">
+                            <ul class="subject">
+                                <li class="title">
+                                    과목<span>*</span>
+                                </li>
+                                <li class="choice" data-subject="korean">
+                                    국어
+                                </li>
+                                <li class="choice" data-subject="math">
+                                    수학
+                                </li>
+                                <li class="choice" data-subject="social">
+                                    사회
+                                </li>
+                                <li class="choice" data-subject="science">
+                                    과학
+                                </li>
+                                <li class="choice" data-subject="english">
+                                    영어
+                                </li>
+                                <li class="choice" data-subject="meter">
+                                    계기
+                                </li>
+                                <li class="choice" data-subject="etc">
+                                    기타
+                                </li>
+                            </ul>
+                            <ul class="grade">
+                                <li class="title">
+                                    학년<span>*</span>
+                                </li>
+                                <li class="choice" data-grade="one">
+                                    1학년
+                                </li>
+                                <li class="choice" data-grade="two">
+                                    2학년
+                                </li>
+                                <li class="choice" data-grade="three">
+                                    3학년
+                                </li>
+                                <li class="choice" data-grade="four">
+                                    4학년
+                                </li>
+                                <li class="choice" data-grade="five">
+                                    5학년
+                                </li>
+                                <li class="choice" data-grade="six">
+                                    6학년
+                                </li>
+                                <li class="choice" data-grade="etc">
+                                    기타
+                                </li>
+                            </ul>
+                            <ul class="semester">
+                                <li class="title">
+                                    학기<span>*</span>
+                                </li>
+                                <li class="choice" data-semester="one">
+                                    1학기
+                                </li>
+                                <li class="choice" data-semester="two">
+                                    2학기
+                                </li>
+                                <li class="choice" data-semester="etc">
+                                    기타
+                                </li>
+                            </ul>
+                            <ul class="unit">
+                                <li class="title">
+                                    단원
+                                </li>
+                                <li class="input_box">
+                                    <input type="text" placeholder="단원명을 입력해주세요.">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="option_box">
+                            <ul class="quiz_title">
+                                <li class="title">
+                                    제목<span>*</span>
+                                </li>
+                                <li class="input_box">
+                                    <input type="text" placeholder="Ex) 수학 3-2 3단원 분수의 덧셈 O X 퀴즈">
+                                </li>
+                            </ul>
+                            <ul class="num">
+                                <li class="title">
+                                    문항 수<span>*</span>
+                                </li>
+                                <li>
+                                    <select name="select_num" id="select_num" class="custom_select sources" placeholder="1개">
+                                        <option value="" selected>1개</option>
+                                        <option value="">2개</option>
+                                        <option value="">3개</option>
+                                        <option value="">4개</option>
+                                        <option value="">5개</option>
+                                        <option value="">6개</option>
+                                        <option value="">7개</option>
+                                        <option value="">8개</option>
+                                        <option value="">9개</option>
+                                        <option value="">10개</option>
+                                        <option value="">11개</option>
+                                        <option value="">12개</option>
+                                        <option value="">13개</option>
+                                        <option value="">14개</option>
+                                        <option value="">15개</option>
+                                        <option value="">16개</option>
+                                        <option value="">17개</option>
+                                        <option value="">18개</option>
+                                        <option value="">19개</option>
+                                        <option value="">20개</option>
+                                    </select>
+                                    <span>* 최대 20문항 설정 가능</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="next_btn basic_btn orange">
+                            다음 단계
+                        </button>
+                    </div>
+                    
+                </section>
+            </div>
+
+        </div>
+
+        <!-- 모달 -->
+        <!-- 필수값 요청 모달 -->
+        <div class="modal_wrap message_modal essential_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    필수 값을 입력해 주세요.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 제목 중복안내 모달 -->
+        <div class="modal_wrap message_modal overlap_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    퀴즈 제목이 중복됩니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/my_page.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/my_page.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page my_page scrap">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="grade_setting.html" class="link basic_btn white">
+                            학년(과목) 설정
+                        </a>
+                        <a href="scrap_download_data.html" class="link basic_btn orange">
+                            스크랩 자료
+                        </a>
+                        <a href="my_writing.html" class="link basic_btn white">
+                            내가 쓴 글
+                        </a>
+                        <a href="problem_bank.html" class="link basic_btn white">
+                            내 문제은행
+                        </a>
+                        <a href="member_info.html" class="link basic_btn white">
+                            회원 정보 수정
+                        </a>
+                        <a href="withdrawal.html" class="link basic_btn white">
+                            회원 탈퇴
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>마이클래스</span>
+                        <span>스크랩 자료</span>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab">
+                            <a href="scrap_download_data.html" class="link">
+                                다운로드 자료
+                            </a>
+                        </div>
+                        <div class="tab active">
+                            <a href="scrap_video_data.html" class="link">
+                                동영상 자료
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video_wrap">
+                        <div class="top_area align">
+                            <select name="select_view" id="select_view" class="custom_select sources" placeholder="전체">
+                                <option value="" selected>전체</option>
+                                <option value="">교과자료</option>
+                                <option value="">평가자료</option>
+                            </select>
+                        </div>
+                        <!-- <div class="empty_box">
+                            다운로드 한 자료가 없습니다.
+                        </div> -->
+                        <ul class="video_list">
+                            <li>
+                                <div class="somenail">
+                                    <div class="somenail_img">
+                                        <img src="../../img/digitalClass/big_plain.png" alt="">
+                                    </div>
+                                    <div class="play_bg"></div>
+                                </div>
+                                <div class="video_info">
+                                    <div class="top">
+                                        <button class="delete_btn"></button>
+                                        <div class="time">
+                                            <span>00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="file_type">
+                                        <span>평가자료</span>
+                                    </div>
+                                    <div class="file_name">
+                                        <span>파일명 text</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="somenail">
+                                    <div class="somenail_img">
+                                        <img src="../../img/digitalClass/big_plain.png" alt="">
+                                    </div>
+                                    <div class="play_bg"></div>
+                                </div>
+                                <div class="video_info">
+                                    <div class="top">
+                                        <button class="delete_btn"></button>
+                                        <div class="time">
+                                            <span>00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="file_type">
+                                        <span>평가자료</span>
+                                    </div>
+                                    <div class="file_name">
+                                        <span>파일명 text</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="somenail">
+                                    <div class="somenail_img">
+                                        <img src="../../img/digitalClass/big_plain.png" alt="">
+                                    </div>
+                                    <div class="play_bg"></div>
+                                </div>
+                                <div class="video_info">
+                                    <div class="top">
+                                        <button class="delete_btn"></button>
+                                        <div class="time">
+                                            <span>00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="file_type">
+                                        <span>평가자료</span>
+                                    </div>
+                                    <div class="file_name">
+                                        <span>파일명 text</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="somenail">
+                                    <div class="somenail_img">
+                                        <img src="../../img/digitalClass/big_plain.png" alt="">
+                                    </div>
+                                    <div class="play_bg"></div>
+                                </div>
+                                <div class="video_info">
+                                    <div class="top">
+                                        <button class="delete_btn"></button>
+                                        <div class="time">
+                                            <span>00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="file_type">
+                                        <span>평가자료</span>
+                                    </div>
+                                    <div class="file_name">
+                                        <span>파일명 text</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="somenail">
+                                    <div class="somenail_img">
+                                        <img src="../../img/digitalClass/big_plain.png" alt="">
+                                    </div>
+                                    <div class="play_bg"></div>
+                                </div>
+                                <div class="video_info">
+                                    <div class="top">
+                                        <button class="delete_btn"></button>
+                                        <div class="time">
+                                            <span>00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="file_type">
+                                        <span>평가자료</span>
+                                    </div>
+                                    <div class="file_name">
+                                        <span>파일명 text</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal_wrap video_modal">
+            <div class="modal_box">
+                <div class="modal_head">
+                    <h3>파일명 파일명 파일명 파일명 파일명</h3>
+                    <button class="close_btn"></button>
+                </div>
+                <div class="video_area">
+                    <video class="science_video" controls playsinline controlsList="nodownload">
+                        <source src="../../video/temporary.mp4" type="video/mp4">
+                    </video>
+                    <div class="play_bg">
+                        <button class="play_btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

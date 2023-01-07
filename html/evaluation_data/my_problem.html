@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/evaluation_data.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/problem_bank.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="problem_bank_page my">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>문제은행</span>
+                    </div>
+                    <div class="right">
+                        <button class="tip_btn"></button>
+                        <button class="logout_btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="problem_bank.html" class="link basic_btn white">
+                            시험지 만들기
+                        </a>
+                        <a href="my_problem.html" class="link basic_btn orange">
+                            내 시험지
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <!-- 테이블 -->
+                    <div class="table_wrap">
+                        <ul class="table_head">
+                            <li>
+                                <input type="checkbox" id="chkAll" class="chk">
+                            </li>
+                            <li>
+                                <span>시험지명</span>
+                            </li>
+                            <li>
+                                <span>생성일</span>
+                            </li>
+                            <li>
+                                <span>문항 수</span>
+                            </li>
+                            <li>
+                                <span>미리보기</span>
+                            </li>
+                            <li>
+                                <span>다운로드</span>
+                            </li>
+                        </ul>
+                        <div class="table_body">
+                            <!-- 게시글 없을 시 -->
+                            <!-- <div class="empty_box">
+                                게시글이 없습니다.
+                            </div> -->
+                            <!-- 리스트 -->
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>자료 제목</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn link" download></a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>자료 제목</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn link" download></a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>자료 제목</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn link" download></a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <input type="checkbox" name="chk" class="chk">
+                                </li>
+                                <li>
+                                    <span>자료 제목</span>
+                                </li>
+                                <li>
+                                    <span>0000. 00. 00</span>
+                                </li>
+                                <li>
+                                    <span>00</span>
+                                </li>
+                                <li>
+                                    <button class="preview_btn"></button>
+                                </li>
+                                <li>
+                                    <a href="../../download/test.txt" class="download_btn link" download></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="align">
+                            <button class="basic_btn orange allDownload_btn" disabled>
+                                다운로드
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+                </section>
+            </div>  
+        </div>
+
+    </div>
+</body>
+
+</html>

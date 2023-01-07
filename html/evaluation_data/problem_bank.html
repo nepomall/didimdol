@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/evaluation_data.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/problem_bank.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="problem_bank_page making">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>문제은행</span>
+                    </div>
+                    <div class="right">
+                        <button class="tip_btn"></button>
+                        <button class="logout_btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="problem_bank.html" class="link basic_btn orange">
+                            시험지 만들기
+                        </a>
+                        <a href="my_problem.html" class="link basic_btn white">
+                            내 시험지
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <div class="problem_load">
+                        <div class="top_area">
+                            <button class="basic_btn orange load_btn">
+                                문제 불러오기
+                            </button>
+                            <div class="question_info">
+                                <p class="num">
+                                    전체 문항 수 <span>100</span>
+                                </p>
+                                <div class="question_choice">
+                                    <div class="input_box">
+                                        <input type="text">
+                                        <span>문항</span>
+                                    </div>
+                                    <button class="basic_btn whiteOg random_btn">
+                                        랜덤 선택
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question_list">
+                            <span>문제 불러오기를 통해 문제를 추가해 주세요!</span>
+                        </div>
+                    </div>
+                    <div class="test_paper">
+                        <div class="top_area">
+                            <p class="title">시험지명</p>
+                            <input type="text">
+                        </div>
+                        <div class="paper">
+                            <span>문제 불러오기를 통해 문제를 추가해 주세요!</span>
+                        </div>
+                        <div class="bottom_area">
+                            <p class="num">
+                                <span>20</span> 문항
+                            </p>
+                            <button class="basic_btn orange save_btn">
+                                시험지 저장
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- 팁내용 -->
+            <div class="tip_comment load">
+                학년>학기>단원 및 난이도, 유형을 선택해 문제를
+                <br>
+                불러올 수 있습니다.
+            </div>
+            <div class="tip_comment num">
+                불러온 문제 중 지정한 문항 수 만큼 무작위로 선택할 수 있습니다.
+            </div>
+            <div class="tip_comment name">
+                시험지명을 입력하세요.
+            </div>
+            <div class="tip_comment total">
+                선택된 전체 문항 수가 표시 됩니다.
+            </div>
+            <div class="tip_comment download">
+                시험지를 저장하면 다운로드 받으실 수 있습니다.
+            </div>
+            <button class="tip_close"></button>
+        </div>
+
+        <!-- 문제불러오기 모달 -->
+        <div class="modal_wrap problemLoad_modal">
+            <div class="modal_box">
+                <h3 class="modal_title">문제 불러오기</h3>
+
+                <div class="search_area">
+                    <ul class="subject">
+                        <li class="title">
+                            과목
+                        </li>
+                        <li class="option">
+                            <div class="radio_wrap">
+                                <input type="radio" name="subject" id="math" class="radio">
+                                <label for="math">
+                                    수학
+                                </label>
+                            </div>
+                            <!-- <div class="radio_wrap">
+                                <input type="radio" name="subject" id="science" class="radio">
+                                <label for="science">
+                                    과학
+                                </label>
+                            </div> -->
+                        </li>
+                    </ul>
+                    <ul class="grade">
+                        <li class="title">
+                            학년 / 학기
+                        </li>
+                        <li class="option">
+                            <select name="select_grade" id="select_grade" class="custom_select sources" placeholder="학년">
+                                <option value="" selected>1학년</option>
+                                <option value="">2학년</option>
+                                <option value="">3학년</option>
+                                <option value="">4학년</option>
+                                <option value="">5학년</option>
+                                <option value="">6학년</option>
+                            </select>
+                            <select name="select_semester" id="select_semester" class="custom_select sources" placeholder="학기">
+                                <option value="" selected>1학기</option>
+                                <option value="">2학기</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul class="level">
+                        <li class="title">
+                            난이도
+                        </li>
+                        <li class="option">
+                            <div class="tab">
+                                기초
+                            </div>
+                            <div class="tab">
+                                기본
+                            </div>
+                            <div class="tab">
+                                심화
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="category">
+                        <li class="title">
+                            문제 유형
+                        </li>
+                        <li class="option">
+                            <div class="tab">
+                                객관식
+                            </div>
+                            <div class="tab">
+                                단답형
+                            </div>
+                            <div class="tab">
+                                서술형
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="align">
+                        <button class="basic_btn orange search_btn">
+                            검색
+                        </button>
+                    </div>
+                </div>
+
+                <div class="choice_area">
+
+                </div>
+
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        닫기
+                    </button>
+                    <button class="basic_btn orange confirm_btn">
+                        불러오기
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 시험지명 미입력 모달 -->
+        <div class="modal_wrap message_modal putTestName_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    시험지명을 입력해 주세요.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 시험지명 중복 모달 -->
+        <div class="modal_wrap message_modal nameOverlap_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    시험지명이 중복됩니다. 다른 이름으로 저장하세요.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 문항 미선택 모달 -->
+        <div class="modal_wrap message_modal choiceProblem_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    문항이 선택되지 않았습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 시험지  저장완료 모달 -->
+        <div class="modal_wrap message_modal testSaveComplete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    시험지가 저장 되었습니다. ‘내 시험지'에서 확인하세요.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

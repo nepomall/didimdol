@@ -1,0 +1,431 @@
+/* 평가자료페이지-------------------------------------------- */
+/* 사이드 ----------------------------*/
+.classPlus_data_page .choice_wrap{
+    margin-top: 0;
+}
+
+.classPlus_data_page .choice_wrap .choice_box{
+    justify-content: space-between;
+}
+
+.sub_page .choice_wrap .choice_btn:not(:last-child){
+    margin-right: 0;
+}
+
+.classPlus_data_page .choice_wrap .choice_btn.grade_btn{
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.classPlus_data_page .choice_wrap .choice_btn.semester_btn{
+    width: 111px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.classPlus_data_page .choice_wrap .choice_box.grade{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.classPlus_data_page .choice_wrap .choice_box.semester{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.classPlus_data_page .bubble {
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #888;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+	border-radius: 100px;
+    height: 55px;
+    margin-top: 30px;
+}
+
+.classPlus_data_page .bubble:after {
+    background-color: #fff;
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: -6px;
+    transform:             rotate( 120deg ) skew( -35deg );
+        -moz-transform:    rotate( 120deg ) skew( -35deg );
+        -ms-transform:     rotate( 120deg ) skew( -35deg );
+        -o-transform:      rotate( 120deg ) skew( -35deg );
+        -webkit-transform: rotate( 120deg ) skew( -35deg );
+    width:  20px;
+    box-shadow: -2px 2px 2px 0 rgba( 0, 0, 0, 0.04 );
+    left: 107px;
+}
+
+.classPlus_data_page .bubble.active {
+	background: #54C1FF;
+    color: #fff;
+}
+
+.classPlus_data_page .bubble.active:after {
+    background-color: #54C1FF;
+}
+
+/* 메인컨텐츠-----------------------------------*/
+/* 페이지 상단 */
+.classPlus_data_page .page_top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.classPlus_data_page .page_top div{
+    display: flex;
+    align-items: center;
+}
+
+.classPlus_data_page .page_top .grade{
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.classPlus_data_page .page_top .grade,
+.classPlus_data_page .page_top .semester{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.classPlus_data_page .page_top .num{
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+    margin-right: 15px;
+    font-weight: 600;
+    color: #FF7F21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffe7d5;
+}
+
+/* 단원텝 */
+.classPlus_data_page .unit_tabs{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin: 0 0 30px;
+}
+
+.classPlus_data_page .unit_tabs .tab{
+    width: 337px;
+    height: 50px;
+    border-radius: 45px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    background: #ddd;
+    color: #fff;
+}
+
+.classPlus_data_page .unit_tabs .tab.active{
+    background: #FF9D54;
+}
+
+.classPlus_data_page .unit_tabs .tab:nth-child(3n+1){
+    margin-left: 0;
+}
+
+/* 메인 테이블 */
+.classPlus_data_page.main .table_wrap .table_head{
+    height: 38px;
+    padding: 0 10px;
+    border-bottom: 1px solid #FF7F21;
+    display: flex;
+    align-items: center;
+}
+
+.classPlus_data_page.main .common_data{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #aaa;
+}
+
+.classPlus_data_page.main .common_data .table_head{
+    background:#FFC48D;
+}
+
+.classPlus_data_page.main .individual_data .table_head{
+    background: #FFF6EE;
+}
+
+.classPlus_data_page.main .table_wrap span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.classPlus_data_page.main .table_wrap .table_list span{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.classPlus_data_page.main .table_wrap .table_list{
+    flex-wrap: wrap;
+}
+
+.classPlus_data_page.main .table_wrap li{
+    width: 50%;
+    height: 50px;
+    padding: 0 24px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.classPlus_data_page.main .table_wrap li:nth-child(2n+1){
+    border-right: 1px solid #ddd;
+}
+
+.classPlus_data_page.main .table_wrap li button{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.classPlus_data_page.main .table_wrap li a{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 30px;
+}
+
+.classPlus_data_page.main .table_wrap li.video .video_btn{
+    background: url(../img/icon/icon_play.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.main .table_wrap li.folder .folder_btn{
+    background: url(../img/icon/icon_folder.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.main .table_wrap li.hwp .download_btn{
+    background: url(../img/icon/icon_hwp.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.main .table_wrap li.pdf .download_btn{
+    background: url(../img/icon/icon_pdf.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.main .table_wrap li.mp4 .download_btn{
+    background: url(../img/icon/icon_mp4.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.main .table_wrap li.jpg .download_btn{
+    background: url(../img/icon/icon_jpg.svg) no-repeat center center / contain;
+}
+
+/* 리스트 */
+.classPlus_data_page.creat .list_wrap .tabs{
+    display: flex;
+}
+
+.classPlus_data_page.creat .list_wrap .tab{
+    width: 50%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 6px 6px 0 0;
+    background: #fff;
+    border: 1px solid #888;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classPlus_data_page.creat .list_wrap .tab.active{
+    background: #FF9D54;
+    color: #fff;
+    border: none;
+}
+
+.classPlus_data_page.creat .list_wrap .content{
+    padding: 30px;
+    height: 600px;
+    border-radius: 0 0 20px 20px;
+    overflow: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #fff;
+    border-bottom: 1px solid #FF9D54;
+    border-left: 1px solid #FF9D54;
+    border-right: 1px solid #FF9D54;
+}
+
+.classPlus_data_page.creat .list_wrap .content::-webkit-scrollbar{
+    display: none;
+}
+
+.classPlus_data_page.creat .list_wrap li{
+    width:228px;
+    margin-left: 23px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    background: #fff;
+    overflow: hidden;
+}
+
+.classPlus_data_page.creat .list_wrap li:nth-child(4n+1){
+    margin-left: 0;
+}
+
+.classPlus_data_page.creat .list_wrap li .somenail{
+    height: 114px;
+    cursor: pointer;
+    position: relative;
+}
+
+.classPlus_data_page.creat .list_wrap li .somenail_img{
+    width: 100%;
+    height: 100%;
+}
+
+.classPlus_data_page.creat .list_wrap li .play_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.classPlus_data_page.creat .list_wrap li .play_bg::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 38px;
+    background: url(../img/icon/icon_play.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info{
+    padding: 14px;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .top .icon_box{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .top .icon_box.scrap{
+    background: url(../img/icon/icon_star_empty.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .top .icon_box.scrap.active{
+    background: url(../img/icon/icon_star.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .top .icon_box.preview{
+    background: url(../img/icon/icon_search.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .video_info .file_name span{
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #444;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.classPlus_data_page.creat .list_wrap .topic_box{
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.classPlus_data_page.creat .list_wrap .topic_box:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.classPlus_data_page.creat .list_wrap .content.topic .title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.classPlus_data_page.creat .list_wrap .content.topic ul{
+    display: flex;
+}
+
+.classPlus_data_page.creat .list_wrap .content.topic li{
+    margin-bottom: 0;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download .somenail a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download .somenail_img{
+    width: auto;
+    height: auto;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download .file_img{
+    width: 58px;
+    height: 70px;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download.hwp .file_img{
+    background: url(../img/icon/icon_hwp.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download.pdf .file_img{
+    background: url(../img/icon/icon_pdf.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download.mp4 .file_img{
+    background: url(../img/icon/icon_mp4.svg) no-repeat center center / contain;
+}
+
+.classPlus_data_page.creat .list_wrap .file_download.jpg .file_img{
+    background: url(../img/icon/icon_jpg.svg) no-repeat center center / contain;
+}

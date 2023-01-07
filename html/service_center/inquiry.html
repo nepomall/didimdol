@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/service_center.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/service_page.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page service_page inquiry">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="notice.html" class="link basic_btn white">
+                            공지사항
+                        </a>
+                        <a href="faq.html" class="link basic_btn white">
+                            자주하는 질문
+                        </a>
+                        <a href="inquiry.html" class="link basic_btn orange">
+                            1:1 문의
+                        </a>
+                        <a href="use_info.html" class="link basic_btn white">
+                            사이트 이용안내
+                        </a>
+                        <a href="branch_info.html" class="link basic_btn white">
+                            지사안내
+                        </a>
+                        <a href="site_map.html" class="link basic_btn white">
+                            사이트맵
+                        </a>
+                        <a href="data_request.html" class="link basic_btn white">
+                            자료 요청
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>고객센터</span>
+                        <span>1:1문의</span>
+                    </div>
+
+                    <div class="tip_box">
+                        <h3 class="yde">1:1문의 안내</h3>
+                        <p>
+                            고객센터의 ‘자주하는 질문'에 이미 준비된 답변이 있는지 확인 후 작성해 주세요
+                        </p>
+                        <p>
+                            평가 자료의 오류는 각 자료 게시판의 ‘오류 신고'를 이용하시면 더욱 빠르게 처리 됩니다.
+                        </p>
+                        <p>
+                            작성하신 문의 내용의 답변은 ‘마이클래스 > 내가 쓴 글 > 1:1문의’에서 확인 가능합니다.
+                        </p>
+                    </div>
+                    <div class="deco"></div>
+                    <div class="regist_wrap">
+                        <h3 class="title">1:1문의 글등록</h3>
+                        <div class="regist_box essential">
+                            <div class="grade half">
+                                <p>유형</p>
+                                <select name="select_type" id="select_type" class="custom_select sources"
+                                    placeholder="유형 선택">
+                                    <option value="" selected>유형1</option>
+                                    <option value="">유형2</option>
+                                    <option value="">유형3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="regist_box post_title essential full">
+                            <p>제목</p>
+                            <input type="text" class="title_input" placeholder="제목을 입력해 주세요.">
+                        </div>
+                        <div class="regist_box post_content essential">
+                            <p>내용</p>
+                            <div class="editer_area">
+                                에디터 영역
+                            </div>
+                        </div>
+                        <div class="regist_box post_file full">
+                            <p>첨부파일</p>
+                            <div class="upload">
+                                <label for="chooseFile" class="basic_btn orange upload_btn">파일 첨부</label>
+                                <input type="file" id="chooseFile" accept="" multiple />
+                                <ul class="loaded_files">
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                    <li>
+                                        <span>첨부파일.jpg</span>
+                                        <button class="delete_btn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_wrap">
+                        <button class="basic_btn whiteOg cancel_btn">취소</button>
+                        <button class="basic_btn orange regist_btn" disabled>등록</button>
+                    </div>
+                    
+
+                </section>
+            </div>
+        </div>
+
+        <!-- 게시물 삭제 모달 -->
+        <div class="modal_wrap message_modal cancel_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    작성 중 페이지 이동시 내용이 전부 삭제됩니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

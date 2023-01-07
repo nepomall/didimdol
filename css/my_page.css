@@ -1,0 +1,958 @@
+/* 테이블 공통---------------------------------------------*/
+.my_page .table_wrap {
+    margin-top: 30px;
+}
+
+.my_page .table_wrap .align,
+.my_page .video_wrap .align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my_page .table_wrap .custom_select_wrapper,
+.my_page .video_wrap .custom_select_wrapper {
+    width: 140px;
+}
+
+.my_page .table_wrap .empty_box {
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+}
+
+.my_page .table_head {
+    margin-top: 15px;
+    background: #FFF6EE;
+    border-bottom: 1px solid #FF7F21;
+}
+
+.my_page .table_head li {
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.my_page .table_list {
+    border-bottom: 1px solid #ddd;
+}
+
+.my_page .table_list li {
+    height: 50px;
+}
+
+.my_page .table_list li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.my_page .table_list li:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.my_page .table_list button,
+.my_page .table_list .download_btn {
+    width: 24px;
+    height: 24px;
+}
+
+.my_page .table_list .preview_btn {
+    background: url(../img/icon/icon_search.svg) no-repeat center center / contain;
+}
+
+.my_page .table_list .download_btn {
+    background: url(../img/icon/icon_cloud.svg) no-repeat center center / contain;
+}
+
+.my_page .table_list .delete_btn {
+    background: url(../img/icon/icon_delete_noBg.svg) no-repeat center center / contain;
+}
+
+.my_page .table_wrap .allDownload_btn {
+    width: 185px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* 텝 공통----------------------------------*/
+.my_page .tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.my_page .tab {
+    width: 50%;
+    height: 55px;
+    font-size: 21px;
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    background: #fff;
+    color: #FF9D54;
+    border: 1px solid #FF9D54;
+    ;
+}
+
+.my_page .tab a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.my_page .tab.active {
+    background: #FF9D54;
+    color: #fff;
+}
+
+/* 학년설정 페이지----------------------------------------------- */
+.my_page.grade_setting .choice_box {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.my_page.grade_setting .choice_btn {
+    width: 160px;
+}
+
+.my_page.grade_setting .choice_btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.my_page.grade_setting .check_area {
+    display: flex;
+    padding-left: 20px;
+}
+
+.my_page.grade_setting .chk_wrap:not(:last-child) {
+    margin-right: 46px;
+}
+
+.my_page.grade_setting .chk_wrap .chk {
+    margin-right: 12px;
+}
+
+.my_page.grade_setting .button_wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 200px;
+}
+
+.my_page.grade_setting .button_wrap button {
+    width: 196px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.my_page.grade_setting .button_wrap .cancel_btn {
+    margin-right: 10px;
+}
+
+.my_page.grade_setting .choice_wrap .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.my_page.grade_setting .choice_wrap .title h3 {
+    margin-bottom: 0;
+}
+
+.my_page.grade_setting .choice_wrap .info {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: url(../img/icon/icon_question_mark.svg) no-repeat center center / contain;
+    position: relative;
+}
+
+.my_page.grade_setting .choice_wrap .bubble {
+    display: none;
+    width: 346px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 36px;
+    line-height: 140%;
+    padding: 14px 16px;
+    background: #FF9D54;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -366px;
+}
+
+.my_page.grade_setting .choice_wrap .info:hover .bubble {
+    display: block;
+}
+
+.my_page.grade_setting .choice_wrap .bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #FF9D54;
+    border-left: 0;
+    transform: translate(0, -50%);
+    margin-left: -10px;
+}
+
+/* 스크랩 자료 페이지--------------------------------------- */
+/* 다운로드 테이블 */
+.my_page.scrap .table_head li:nth-child(1),
+.my_page.scrap .table_list li:nth-child(1) {
+    width: 85px;
+}
+
+.my_page.scrap .table_head li:nth-child(2),
+.my_page.scrap .table_list li:nth-child(2) {
+    width: 105px;
+}
+
+.my_page.scrap .table_head li:nth-child(3),
+.my_page.scrap .table_body li:nth-child(3) {
+    width: 483px;
+    padding: 0 20px;
+}
+
+.my_page.scrap .table_body li:nth-child(3) {
+    justify-content: flex-start;
+}
+
+.my_page.scrap .table_body li:nth-child(3) span{
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.my_page.scrap .table_head li:nth-child(4),
+.my_page.scrap .table_head li:nth-child(5),
+.my_page.scrap .table_head li:nth-child(6),
+.my_page.scrap .table_list li:nth-child(4),
+.my_page.scrap .table_list li:nth-child(5),
+.my_page.scrap .table_list li:nth-child(6) {
+    flex: 1;
+}
+
+/* 동영상 자료 */
+.my_page.scrap .video_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.my_page.scrap .video_list li {
+    width: 245px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    background: #fff;
+    overflow: hidden;
+}
+
+.my_page.scrap .video_list li:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.my_page.scrap .video_list .somenail {
+    height: 114px;
+    cursor: pointer;
+    position: relative;
+}
+
+.my_page.scrap .video_list .somenail_img {
+    width: 100%;
+    height: 100%;
+}
+
+.my_page.scrap .video_list .play_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.my_page.scrap .video_list .play_bg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 38px;
+    background: url(../img/icon/icon_play.svg) no-repeat center center / contain;
+}
+
+.my_page.scrap .video_info {
+    padding: 14px;
+}
+
+.my_page.scrap .video_info .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.my_page.scrap .video_info .top .delete_btn {
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon/icon_delete_noBg.svg) no-repeat center center / contain;
+}
+
+.my_page.scrap .video_info .file_name span,
+.my_page.scrap .video_info .file_type span {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #444;
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.my_page.scrap .video_info .file_type span{
+    font-weight: 600;
+}
+
+/* 내가쓴글 페이지------------------------------------- */
+/*테이블 */
+.my_page.writing .table_head li:nth-child(1),
+.my_page.writing .table_list li:nth-child(1) {
+    width: 85px;
+}
+
+.my_page.writing .table_head li:nth-child(2),
+.my_page.writing .table_list li:nth-child(2) {
+    width: 105px;
+}
+
+.my_page.writing .table_head li:nth-child(3),
+.my_page.writing .table_body li:nth-child(3) {
+    width: 483px;
+    padding: 0 20px;
+}
+
+.my_page.writing.share .table_head li:nth-child(3),
+.my_page.writing.share .table_body li:nth-child(3) {
+    width: 560px;
+}
+
+.my_page.writing .table_body li:nth-child(3) {
+    justify-content: flex-start;
+}
+
+.my_page.writing .table_body li:nth-child(3) span{
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.my_page.writing .table_head li:nth-child(4),
+.my_page.writing .table_head li:nth-child(5),
+.my_page.writing .table_list li:nth-child(4),
+.my_page.writing .table_list li:nth-child(5){
+    flex: 1;
+}
+
+.my_page.writing .table_list li:nth-child(5) span{
+    color: #FF7F21;
+}
+
+.my_page.writing .table_list li.has_answer span{
+    color: #FF1F1F;
+}
+
+/* 내가 쓴 글 상세------------------------ */
+.my_page.writing_detail .post_wrap .top_area{
+    display: flex;
+    align-items: center;
+}
+
+.my_page.writing_detail .post_wrap .post_type{
+    width: 95px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #FF9D54;
+    border: 1px solid #FF9D54;
+}
+
+.my_page.writing_detail .post_wrap .title{
+    width: 745px;
+    padding: 0 15px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.my_page.writing_detail .post_wrap .top_area .button_wrap{
+    margin-right: 23px;
+}
+
+.my_page.writing_detail .post_wrap .top_area button{
+    font-size: 16px;
+    color: #888;
+}
+
+.my_page.writing_detail .post_wrap .delete_btn{
+    margin-right: 28px;
+    position: relative;
+}
+
+.my_page.writing_detail .post_wrap .delete_btn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -19px;
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+}
+
+.my_page.writing_detail .post_wrap .date{
+    font-size: 16px;
+    color: #888;
+}
+
+.my_page.writing_detail .post_wrap .post{
+    border-bottom: 1px solid #ddd;
+}
+
+.my_page.writing_detail .post_wrap .post .text_box{
+    display: block;
+    font-size: 18px;
+    line-height: 140%;
+    color: #444;
+    padding: 40px 0;
+}
+
+.my_page.writing_detail .post_wrap .answer{
+    padding: 17px 0 40px;
+    border-bottom: 1px solid #FF9D54;
+}
+
+.my_page.writing_detail .post_wrap .answer .top_area{
+    justify-content: space-between;
+}
+
+.my_page.writing_detail .post_wrap .name{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF7F21;
+}
+
+.my_page.writing_detail .post_wrap .name::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: url(../img/icon/icon_reply.svg) no-repeat center center / contain;
+}
+
+.my_page.writing_detail .post_wrap .answer .text_box{
+    padding: 20px 0 0 34px;
+    font-size: 18px;
+    color: #444;
+    line-height: 140%;
+    display: block;
+}
+
+.my_page.writing_detail .align{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my_page.writing_detail .goList_btn{
+    width: 122px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 내 문제은행---------------------------------------*/
+.my_page.bank .table_wrap li:nth-child(1){
+    width: 85px;
+}
+
+.my_page.bank .table_wrap li:nth-child(2){
+    width: 465px;
+}
+
+.my_page.bank .table_list li:nth-child(2){
+    justify-content: flex-start;
+    padding: 0 24px;
+}
+
+.my_page.bank .table_list li:nth-child(2) span{
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.my_page.bank .table_wrap li:nth-child(3),
+.my_page.bank .table_wrap li:nth-child(4),
+.my_page.bank .table_wrap li:nth-child(5),
+.my_page.bank .table_wrap li:nth-child(6){
+    flex: 1;
+}
+
+.my_page.bank .table_wrap .align{
+    margin-top: 20px;
+}
+
+.my_page.bank .table_wrap .download_all{
+    width: 185px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 회원정보수정 페이지------------------------------------ */
+/* 비밀번호 확인 */
+.my_page.member_info.enter form{
+    width: 392px;
+    margin: auto;
+}
+
+.my_page.member_info.enter legend{
+    text-align: center;
+    font-size: 21px;
+    padding: 100px 0 90px;
+    font-weight: 600;
+    color: #000;
+}
+
+.my_page.member_info.enter input[type=password]{
+    width: 100%;
+    font-size: 18px;
+    height: 46px;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.my_page.member_info .warning{
+    font-size: 16px;
+    color: #FF1F1F;
+}
+
+.my_page.member_info.enter .next_btn{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 34px;
+}
+
+/* 정보수정 */
+.my_page.member_info.edit form{
+    width: 726px;
+    margin: auto;
+}
+
+.my_page.member_info.edit legend{
+    text-align: center;
+    font-size: 24px;
+    padding: 50px 0;
+    font-weight: 600;
+}
+
+.my_page.member_info.edit .info_box:nth-of-type(1){
+    margin-bottom: 40px;
+}
+
+.my_page.member_info.edit .info_box .info_title{
+    width: 117px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_page.member_info.edit .info_box.essential_info .info_title{
+    color: #FF7F21;
+    background: #FFE7D5;
+}
+
+.my_page.member_info.edit .info_box.optional_info .info_title{
+    color: #666;
+    background: #F2f2f2;
+}
+
+.my_page.member_info.edit .info_area{
+    border-radius: 20px;
+    margin-top: 14px;
+}
+
+.my_page.member_info.edit .essential_info .info_area{
+    border: 1px solid #FF9D54;
+    padding: 40px 36px;
+}
+
+.my_page.member_info.edit .optional_info .info_area{
+    padding: 30px 45px;
+    border: 1px solid #ddd;
+}
+
+.my_page.member_info.edit .essential_info .input_title{
+    font-size: 18px;
+    width: 124px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.my_page.member_info.edit .essential_info .input_text{
+    flex: 1;
+}
+
+.my_page.member_info.edit .essential_info ul{
+    display: flex;
+}
+
+.my_page.member_info.edit .essential_info .certification .input_text,
+.my_page.member_info.edit .essential_info .input_cover{
+    display: flex;
+}
+
+.my_page.member_info.edit .essential_info .input_cover{
+    justify-content: space-between;
+}
+
+.my_page.member_info.edit .essential_info .certification .input_text{
+    align-items: center;
+}
+
+.my_page.member_info.edit .essential_info input[type=text],
+.my_page.member_info.edit .essential_info input[type=password]{
+    width: 398px;
+    font-size: 16px;
+}
+
+.my_page.member_info.edit .essential_info input:read-only{
+    background: #F2F2F2;
+    color: #888;
+}
+
+.my_page.member_info.edit .essential_info .custom_select_wrapper{
+    width: 128px;
+}
+
+.my_page.member_info.edit .essential_info .custom_select_trigger{
+    height: 42px;
+}
+
+.my_page.member_info.edit .essential_info ul:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.my_page.member_info.edit .essential_info .certification_status{
+    width: 94px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.my_page.member_info.edit .essential_info .certification_status.not{
+    border: 1px solid #888;
+    color: #888;
+}
+
+.my_page.member_info.edit .essential_info .certification_status.fail{
+    border: 1px solid #FF1F1F;
+    color: #FF1F1F;
+}
+
+.my_page.member_info.edit .essential_info .certification_status.ing{
+    border: 1px solid #FF7F21;
+    color: #FF7F21;
+}
+
+.my_page.member_info.edit .essential_info .certification_status.complete{
+    border: 1px solid #00E009;
+    color: #00E009;
+}
+
+.my_page.member_info.edit .essential_info .certification .certification_btn{
+    width: 117px;
+    height: 35px;
+    margin-left: 16px;
+}
+
+.my_page.member_info.edit .essential_info button{
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.my_page.member_info.edit .essential_info .pw input{
+    margin-bottom: 10px;
+}
+
+.my_page.member_info.edit .essential_info .pw .comment{
+    font-size: 16px;
+    color: #888;
+}
+
+.my_page.member_info.edit .essential_info .email .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 398px;
+}
+
+.my_page.member_info.edit .essential_info .email .left input{
+    width: 117px;
+}
+
+.my_page.member_info.edit .essential_info .email .certification_btn,
+.my_page.member_info.edit .essential_info .input_cover button{
+    width: 122px;
+    height: 42px;
+    border-radius: 6px;
+}
+
+.my_page.member_info.edit .essential_info .phone input:first-child,
+.my_page.member_info.edit .essential_info .address input:not(:last-child),
+.my_page.member_info.edit .essential_info .school input{
+    margin-bottom: 10px;
+}
+
+.my_page.member_info.edit .optional_info .title{
+    font-size: 18px;
+    margin-bottom: 27px;
+    font-weight: 500;
+    color: #444;
+}
+
+.my_page.member_info.edit .optional_info .chk_area{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.my_page.member_info.edit .optional_info .chk_wrap:not(:last-child){
+    margin-right: 28px;
+}
+
+.my_page.member_info.edit .optional_info .chk_area .chk{
+    margin-right: 10px;
+}
+
+.my_page.member_info.edit .optional_info .chk_info.subject{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.my_page.member_info.edit .optional_info .chk_info.marketing{
+    padding-top: 30px;
+}
+
+.my_page.member_info.edit .button_wrap{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_page.member_info.edit .button_wrap button{
+    width: 49%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.my_page.member_info.edit .essential_info .phone .input_box{
+    width: 398px;
+    position: relative;
+}
+
+.my_page.member_info.edit .essential_info .certify_num{
+    padding-right: 55px;
+}
+
+.my_page.member_info.edit .essential_info .phone .input_box span{
+    position: absolute;
+    font-size: 16px;
+    color: #FF9D54;
+    display: block;
+    line-height: 42px;
+    top: 0;
+    right: 16px;
+}
+
+/* 인증 */
+.my_page.member_info.certify .content_section{
+    padding: 50px 0 150px;
+}
+
+.my_page.member_info.certify .page_title{
+    font-size: 24px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.my_page.member_info.certify .comment{
+    font-size: 21px;
+    margin-bottom: 85px;
+    text-align: center;
+}
+
+.my_page.member_info.certify .choice_area,
+.my_page.member_info.certify .button_wrap{
+    width: 664px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_page.member_info.certify .choice_area li{
+    width: 317px;
+    height: 317px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.my_page.member_info.certify .choice_area .img_box{
+    width: 100%;
+    height:250px;
+    margin-bottom: 10px;
+}
+
+.my_page.member_info.certify .button_wrap{
+    margin: 70px auto 0;
+}
+
+.my_page.member_info.certify .button_wrap button{
+    width: 327px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+/* 회원탈퇴 페이지------------------------------------ */
+.my_page.withdrawal form{
+    width: 392px;
+    margin: auto;
+}
+
+.my_page.withdrawal legend{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.my_page.withdrawal .input_box{
+    margin: 60px 0 50px;
+}
+
+.my_page.withdrawal .input_box input{
+    display: block;
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.my_page.withdrawal .warning{
+    font-size: 16px;
+    color: #FF1F1F;
+}
+
+.my_page.withdrawal .info_comment{
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFf5ee;
+    text-align: center;
+}
+
+.my_page.withdrawal .info_comment .icon_box{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto 13px;
+    background: url(../img/icon/icon_exclamation_mark.svg) no-repeat center center / contain;
+}
+
+.my_page.withdrawal .info_comment span{
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.my_page.withdrawal .chk_wrap{
+    margin: 14px 0;
+}
+
+.my_page.withdrawal .chk_wrap input{
+    margin-right: 14px;
+}
+
+.my_page.withdrawal label{
+    font-size: 16px;
+    color: #444;
+}
+
+.my_page.withdrawal .withdrawal_btn{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    box-shadow: none;
+}

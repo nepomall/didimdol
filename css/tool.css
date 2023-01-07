@@ -1,0 +1,811 @@
+#wrap{
+    min-width: 1800px;
+    background: #ffaa2b;
+}
+
+.tool_page .wrap_inner{
+    width: 1720px;
+    padding: 60px 0 20px;
+}
+
+.tool_page .tool_nav{
+    display: flex;
+}
+
+.tool_page .tool_nav li{
+    flex: 1;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    border-radius: 40px 40px 0 0;
+}
+
+.tool_page .tool_nav .timer{
+    background: #FFD02B;
+}
+
+.tool_page .tool_nav .stopwatch{
+    background: #00E009;
+}
+
+.tool_page .tool_nav .picknum{
+    background: #54C1FF;
+}
+
+.tool_page .tool_nav .ladder{
+    background: #FF5050;
+}
+
+.tool_page .tool_nav .board{
+    background: #BE54FF;
+}
+
+.tool_page .tool_nav .bell{
+    background: #00509A;
+}
+
+.tool_page .tool_nav li.active{
+    color: #444;
+    background: #fff;
+}
+
+.tool_page .main_section{
+    display: flex;
+    min-height: 812px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 0 80px;
+}
+
+.tool_page .timer_wrap{
+    display: flex;
+}
+
+.tool_page .timer_box{
+    width: 419px;
+    height: 419px;
+    background: url(../img/tool/timer_box.svg) no-repeat center center / contain;
+    position: relative;
+}
+
+.tool_page .timer_box::after{
+    content: '';
+    display: block;
+    width: 287px;
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    bottom: -100px;
+    transform: translate(-50%, 0 );
+    background: url(../img/tool/timer_shadow.svg) no-repeat center center / contain;
+}
+
+.tool_page .timer_box:first-child{
+    margin-right: 40px;
+}
+
+.tool_page .timer_box input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 250px;
+    text-align: center;
+}
+
+.tool_page .bottom_area{
+    display: flex;
+}
+
+.tool_page .bottom_area button{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tool_page .bottom_area button::after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+
+.tool_page .bottom_area button span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    display: none;
+}
+
+.tool_page .bottom_area .blind_btn{
+    background: #00E009;
+    border: 4px solid #A4FFA7;
+    margin-right: 30px;
+}
+
+.tool_page .bottom_area .angle_btn{
+    background: #BE54FF;
+    border: 4px solid #D186FF;
+}
+
+.tool_page .bottom_area .blind_btn .icon_box{
+    width: 56px;
+    height: 56px;
+    background: url(../img/tool/icon_face.svg) no-repeat center center / contain;
+}
+
+.tool_page .bottom_area .angle_btn .icon_box{
+    width: 59px;
+    height: 36px;
+    margin-top: -5px;
+    background: url(../img/tool/icon_angle.svg) no-repeat center center / contain;
+}
+
+.tool_page .bottom_area button:hover span{
+    display: inline;
+}
+
+.tool_page .bottom_area button:hover .icon_box{
+    display: none;
+}
+
+/* 타이머페이지-------------------------------- */
+.tool_page.timer .main_section{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool_page.timer .timer_control{
+    width: 476px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    background: #f6f6f6;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tool_page.timer .timer_control .time_btn{
+    width: 195px;
+    height: 195px;
+    border-radius: 20px;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.tool_page.timer .timer_control .time_btn::after{
+    content: '';
+    display: block;
+    width: 14px;
+    height: 5px;
+    background: #FFF;
+    opacity: 0.8;
+    border-radius: 20px;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+}
+
+.tool_page.timer .timer_control .time_btn.thirtySec{
+    background: #FFD02B;
+}
+
+.tool_page.timer .timer_control .time_btn.oneMin{
+    background: #8BE000;
+}
+
+.tool_page.timer .timer_control .time_btn.threeMin{
+    background: #54C1FF;
+}
+
+.tool_page.timer .timer_control .time_btn.fiveMin{
+    background: #BE54FF;
+}
+
+.tool_page .ellipse_btn,
+.group_modal .close_btn{
+    width: 195px;
+    height: 77px;
+    border-radius: 68px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.tool_page .ellipse_btn::after,
+.group_modal .close_btn::after{
+    content: '';
+    display: block;
+    width: 9px;
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 5px;
+    left: 27px;
+    background: #fff;
+}
+
+
+.tool_page .timer_control .start_btn{
+    background: #FF7F21;
+    border: 5px solid #FFAF74;
+}
+
+.tool_page .timer_control .reset_btn{
+    background: #00509A;
+    border: 5px solid #2186E2;
+}
+
+.tool_page .timer_control .record_btn{
+    background: #00E009;
+    border: 5px solid #A4FFA7;
+}
+
+/* 스톱워치 페이지-------------------------- */
+.tool_page.stopwatch .main_section{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool_page.stopwatch .left{
+    width: 855px;
+}
+
+.tool_page.stopwatch .left .title_input{
+    width: 100%;
+    height: 80px;
+    background: #f6f6f6;
+    border-radius: 81px;
+    padding: 0 40px;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 57px;
+}
+
+.tool_page.stopwatch .timer_control{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.tool_page.stopwatch .timer_control .ellipse_btn{
+    width: 278px;
+    height: 80px;
+}
+
+.tool_page.stopwatch .record_box{
+    width: 555px;
+    height: 690px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #54C1FF;
+    position: relative;
+}
+
+.tool_page.stopwatch .record_box .title{
+    width: 185px;
+    height: 65px;
+    background: #54C1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -25px;
+    border-radius: 10px;
+}
+
+.tool_page.stopwatch .record_list{
+    background: #fff;
+    height: 100%;
+    overflow: auto;
+    padding: 50px 20px;
+}
+
+.tool_page.stopwatch .record_list::-webkit-scrollbar{
+    display: none;
+}
+
+.tool_page.stopwatch .record_list li{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    border-bottom: 3px solid #54C1FF;
+}
+
+.tool_page.stopwatch .record_list .num{
+    width: 50px;
+    height: 50px;
+    background: #eef9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #54C1FF
+}
+
+.tool_page.stopwatch .record_list .delete_btn{
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon/icon_plus_btn.svg) no-repeat center center / contain;
+    transform: rotate(45deg);
+}
+
+.tool_page.stopwatch .record_list .record{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* 번호 뽑기 페이지-------------------------------- */
+.tool_page.picknum .main_section .after_pick{
+    display: none;
+}
+
+.tool_page.picknum .main_section{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tool_page.picknum .before_pick{
+    padding-top: 130px;
+    position: relative;
+    z-index: 2;
+}
+
+.tool_page.picknum .bg{
+    width: 1215px;
+    height: 582px;
+    background: url(../img/tool/picknum_bg.png) no-repeat center center / contain;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+}
+
+.tool_page.picknum .before_pick .title{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tool_page.picknum .before_pick .num_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 0 80px;
+}
+
+.tool_page.picknum .before_pick input{
+    width: 340px;
+    height: 80px;
+    border: 1px solid #FF7F21;
+    border-radius: 80px;
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tool_page.picknum .before_pick .num_wrap span{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.tool_page.picknum .button_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.tool_page.picknum .ellipse_btn{
+    width: 278px;
+    height: 80px;
+}
+
+.tool_page.picknum .pickOne_btn,
+.tool_page.picknum .reset_btn{
+    background: #FF7F21;
+    border: 5px solid #FFAF74;
+}
+
+.tool_page.picknum .pickTwo_btn,
+.tool_page.picknum .morePick_btn,
+.tool_page.ladder .restart_btn{
+    background: #00509A;
+    border: 5px solid #2186E2;
+}
+
+.tool_page.picknum .repick_btn{
+    background: #FFD02B;
+    border: 5px solid #FFE897;
+}
+
+.tool_page.ladder .reselt_btn{
+    background: #FF5050;
+    border: 5px solid #FF8888;
+}
+
+.tool_page.picknum button:not(:last-child){
+    margin-right: 15px;
+}
+
+.tool_page.picknum .after_pick{
+    padding-top: 80px;
+}
+
+.tool_page.picknum .after_pick .title{
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tool_page.picknum .after_pick .num_wrap{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 50px;
+}
+
+.tool_page.picknum .after_pick .num_wrap .num{
+    width: 380px;
+    height: 330px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #54C1FF;
+    color: #fff;
+}
+
+.tool_page.picknum .after_pick .num_wrap .num span{
+    font-size: 230px;
+    font-weight: 700;
+}
+
+.tool_page.picknum .after_pick .num_wrap .num:first-child{
+    margin-right: 30px;
+}
+
+.tool_page.picknum .after_pick .info{
+    margin: 50px 0;
+}
+
+.tool_page.picknum .after_pick .info,
+.tool_page.picknum .after_pick .info .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool_page.picknum .after_pick .info p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 35px;
+    color: #444;
+}
+
+.tool_page.picknum .after_pick .total{
+    margin-right: 67px;
+}
+
+.tool_page.picknum .after_pick .box div{
+    padding: 18px 45px;
+    border-radius: 80px;
+    background: #fff;
+    border: 1px solid #FF7F21;
+}
+
+.tool_page.picknum .after_pick .box span{
+    font-size: 30px;
+    font-weight: 500;
+    color: #777;
+}
+
+/* 사다리타기 페이지--------------------------- */
+.tool_page.ladder .ellipse_btn{
+    width: 315px;
+    height: 80px;
+}
+
+.tool_page.ladder .main_section{
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool_page.ladder .ladder_wrap{
+    height: 520px;
+    width: 100%;
+    background: gray;
+}
+
+.tool_page.ladder .button_wrap{
+    display: flex;
+    margin-top: 50px;
+}
+
+
+.tool_page.ladder .restart_btn{
+    margin-right: 20px;
+}
+
+.group_modal .modal_box{
+    padding: 50px 80px;
+    border-radius: 20px;
+}
+
+.group_modal .group_wrap{
+    display: flex;
+}
+
+.group_modal .group_list:first-child{
+    margin-right: 226px;
+}
+
+.group_modal .group_list li{
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.group_modal .group_list li:not(:last-child){
+    margin-bottom: 37px;
+}
+
+.group_modal .group_list .num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 118px;
+    color: #444;
+    border: 2px solid #FF7F21;
+    border-radius: 70px;
+    margin-right: 15px;
+}
+
+.group_modal .group_list .option{
+    margin-left: 15px;
+}
+
+.group_modal .close_btn{
+    width: 280px;
+    height: 80px;
+    margin: 70px auto 0;
+    background: #BE54FF;
+    border: 5px solid #D186FF;
+}
+
+/* 칠판페이지------------------------------- */
+.tool_page.board .main_section{
+    flex-direction: column;
+    padding: 0;
+}
+
+.tool_page.board .board_area{
+    width: 100%;
+    height: 707px;
+}
+
+.tool_page.board .board_area canvas{
+    width: 100%;
+    height: 100%;
+    background: #007D67;
+}
+
+.tool_page.board .control_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+}
+
+.tool_page.board .select_box ul{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    bottom: 47px;
+    border-radius: 6px 6px 0 0;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    display: none;
+}
+
+.tool_page.board .select_box li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tool_page.board .select_box{
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tool_page.board .text_size{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.tool_page.board .text_size .icon_box{
+    width: 56px;
+    height: 48px;
+    margin-right: 14px;
+    background: url(../img/icon/icon_text.svg) no-repeat center center / contain;
+}
+
+.tool_page.board .text_size .select_box{
+    width: 187px;
+}
+
+.tool_page.board .select_box .selected{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 21px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tool_page.board .select_box::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon/icon_open_org.svg) no-repeat center center / contain;
+    top: 14px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+.tool_page.board .select_box.open::after{
+    transform: rotate(0deg);
+}
+
+.tool_page.board .select_box.color{
+    width: 117px;
+}
+
+.tool_page.board .eraser{
+    width: 190px;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.tool_page.board .eraser::before{
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin-right: 15px;
+}
+
+.tool_page.board .eraser.part{
+    margin: 0 20px;
+}
+
+.tool_page.board .eraser.part::before{
+    background: url(../img/icon/icon_eraser_part.svg) no-repeat center center / contain;
+}
+
+.tool_page.board .eraser.all::before{
+    background: url(../img/icon/icon_eraser_all.svg) no-repeat center center / contain;
+}
+
+.tool_page.board .select_box .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tool_page.board .select_box .circle.white{
+    background: #fff;
+    border: 1px solid #666;
+}
+
+.tool_page.board .select_box .circle.green{
+    background: #FFD02B;
+}
+
+.tool_page.board .select_box .circle.sky{
+    background: #54C1FF;
+}
+
+.tool_page.board .select_box .circle.red{
+    background: #FF5050;
+}
+
+/* 징중벨 페이지----------------------------- */
+.tool_page.bell .main_section{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.tool_page.bell .main_section .bell_box{
+    width: 340px;
+    height: 354px;
+    margin-bottom: 160px;
+    background: url(../img/tool/bell.png) no-repeat center center / contain;
+}
+
+.tool_page.bell .button_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.tool_page.bell .ellipse_btn{
+    width: 278px;
+    height: 80px;
+}
+
+.tool_page.bell .play_btn{
+    background: #BE54FF;
+    border: 5px solid #D186FF;
+    margin-right: 20px;
+}
+
+.tool_page.bell .stop_btn{
+    background: #FF5050;
+    border: 5px solid #FF8888;
+}
+
+.tool_page{
+    position: relative;
+}

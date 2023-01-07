@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/service_page.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page service_page notice">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="notice.html" class="link basic_btn orange">
+                            공지사항
+                        </a>
+                        <a href="faq.html" class="link basic_btn white">
+                            자주하는 질문
+                        </a>
+                        <a href="inquiry.html" class="link basic_btn white">
+                            1:1 문의
+                        </a>
+                        <a href="use_info.html" class="link basic_btn white">
+                            사이트 이용안내
+                        </a>
+                        <a href="branch_info.html" class="link basic_btn white">
+                            지사안내
+                        </a>
+                        <a href="site_map.html" class="link basic_btn white">
+                            사이트맵
+                        </a>
+                        <a href="data_request.html" class="link basic_btn white">
+                            자료 요청
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>고객센터</span>
+                        <span>공지사항</span>
+                    </div>
+
+                    <div class="table_wrap">
+                        <ul class="table_head">
+                            <li>
+                                <span>번호</span>
+                            </li>
+                            <li>
+                                <span>제목명</span>
+                            </li>
+                            <li>
+                                <span>조회</span>
+                            </li>
+                            <li>
+                                <span>작성일</span>
+                            </li>
+                        </ul>
+                        <div class="table_body">
+                            <!-- 게시글 없을 시 -->
+                            <!-- <div class="empty_box">
+                                게시글이 없습니다.
+                            </div> -->
+                            <!-- 게시번호 역순으로 -->
+                            <!-- 상단고정 리스트 class fix 추가 -->
+                            <!-- 리스트 -->
+                            <ul class="table_list fix">
+                                <li>
+                                    <a href="notice_detail.html">
+                                        <div class="icon_box"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>공지사항 제목 text</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>0000. 00. 00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <a href="notice_detail.html">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>공지사항 제목 text</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>0000. 00. 00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <a href="notice_detail.html">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>공지사항 제목 text</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>0000. 00. 00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="table_list">
+                                <li>
+                                    <a href="notice_detail.html">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>공지사항 제목 text</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="notice_detail.html" class="link">
+                                        <span>0000. 00. 00</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

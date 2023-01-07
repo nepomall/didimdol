@@ -1,0 +1,1023 @@
+/* 로그인페이지-------------------------------------- */
+.sign_page.in{
+    display: flex;
+}
+
+.sign_page.in .left_bg{
+    width: 760px;
+    height: 930px;
+    background: url(../img/main/login_bg.png) no-repeat center center / contain;
+}
+
+.sign_page.in .form_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-top: 190px;
+}
+
+.sign_page.in .form_wrap form{
+    width: 392px;
+}
+
+.sign_page.in .form_wrap legend{
+    font-size: 21px;
+    margin-bottom: 90px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+}
+
+.sign_page.in .form_wrap legend span{
+    color: #FF7F21;
+}
+
+.sign_page.in .form_wrap ul{
+    margin-bottom: 15px;
+}
+
+.sign_page.in .form_wrap ul input{
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    border: 1px solid #afafaf;
+}
+
+.sign_page.in .form_wrap ul li:first-child{
+    margin-bottom: 10px;
+}
+
+.sign_page.in .form_wrap .sign_in_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign_page.in .form_wrap .sign_in_option label{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.sign_page.in .form_wrap .sign_in_option a{
+    font-size: 12px;
+}
+
+.sign_page.in .form_wrap .login_btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    margin: 30px 0 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.sign_page.in .form_wrap .forgot{
+    text-align: center;
+}
+
+.sign_page.in .form_wrap .forgot a{
+    display: inline;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #444;
+    text-align: center;
+}
+
+.sign_page.in .form_wrap .img_box{
+    width: 455px;
+    height: 222px;
+    background: url(../img/main/people.png) no-repeat center center / contain;
+}
+
+.sign_page.in .form_wrap .warning{
+    font-size: 12px;
+    color: #FF1F1F;
+    display: block;
+    margin-bottom: 17px;
+}
+
+.sign_page.in .chk:checked{
+    background: url(../img/icon/checkbox_active.svg) no-repeat center center / contain;
+}
+
+/* 회원가입 페이지-----------------------------*/
+.sign_page.up .form_wrap{
+    width: 726px;
+    padding: 70px 0 150px;
+    margin: auto;
+}
+
+.sign_page.up .form_wrap .signUp_way{
+    display: flex;
+    justify-content: space-between;
+    width: 665px;
+    margin: auto;
+}
+
+.sign_page.up .form_wrap .signUp_way li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    width: 155px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid #555;
+    color: #555;
+}
+
+.sign_page.up .form_wrap .signUp_way li.active{
+    border: 1px solid #FF9D54;
+    color: #FF9D54;
+}
+
+.sign_page.up .signUp_way li::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+}
+
+.sign_page.up .signUp_way li::after{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon/icon_small_next.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way li.active::after{
+    background: url(../img/icon/icon_small_next_og.svg) no-repeat center center / contain; 
+}
+
+.sign_page.up .signUp_way .term_agree::before{
+    background: url(../img/icon/icon_signUp_term.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .verification::before{
+    background: url(../img/icon/icon_signUp_verify.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .info_input::before{
+    background: url(../img/icon/icon_signUp_input.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .teacher_chk::before{
+    background: url(../img/icon/icon_signUp_teacher.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .term_agree.active::before{
+    background: url(../img/icon/icon_signUp_term_og.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .verification.active::before{
+    background: url(../img/icon/icon_signUp_verify_og.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .info_input.active::before{
+    background: url(../img/icon/icon_signUp_input_og.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .signUp_way .teacher_chk.active::before{
+    background: url(../img/icon/icon_signUp_teacher_og.svg) no-repeat center center / contain;
+}
+
+.sign_page.up .form_wrap .page_title{
+    font-size: 21px;
+    margin: 80px 0 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign_page.up .form_wrap .page_comment{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sign_page.up .warning,
+.sign_page.find .warning{
+    font-size: 16px;
+    color: #FF1F1F;
+}
+
+.sign_page.up .button_wrap,
+.sign_page.find .button_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.sign_page.up .button_wrap button,
+.sign_page.find .button_wrap button{
+    width: 49%;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 회원가입 약관동의 */
+.sign_page.up .terms_box{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.sign_page.up .terms_box #chkAll{
+    margin-right: 8px;
+}
+
+.sign_page.up .term_list input[type=checkbox]{
+    margin-right: 17px;
+}
+
+.sign_page.up .terms_box>.chk_wrap label{
+    font-weight: 600;
+}
+
+.sign_page.up .terms_box .chk_wrap label{
+    font-size: 16px;
+}
+
+.sign_page.up .term_list{
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+.sign_page.up .term_list li{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.sign_page.up .term_list li:first-child{
+    margin-bottom: 10px;
+}
+
+.sign_page.up .term_list .title{
+    padding: 0 20px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign_page.up .term_list .switch_btn{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/icon_black_v.svg) no-repeat center center / contain;
+    transition: 0.3s;
+}
+
+.sign_page.up .term_list .switch_btn.active{
+    transform: rotate(180deg);
+}
+
+.sign_page.up .term_text{
+    padding: 0 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.sign_page.up .term_text span{
+    display: block;
+    width: 100%;
+    height: 330px;
+    font-size: 14px;
+    line-height: 140%;
+    overflow: auto;
+    padding: 15px;
+    background: #F8F8F8;
+    color: #444;
+}
+
+.sign_page.up .privacy_set{
+    margin: 40px 0 60px;
+}
+
+.sign_page.up .privacy_set .title{
+    display: flex;
+    align-items: center;
+}
+
+.sign_page.up .privacy_set .title h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.sign_page.up .privacy_set .tip_box{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon/icon_question_mark.svg) no-repeat center center / contain;
+    position: relative;
+}
+
+.sign_page.up .privacy_set .tip_box:hover .bubble{
+    display: block;
+}
+
+.sign_page.up .privacy_set .bubble{
+    width: 345px;
+    padding: 14px 16px;
+    border-radius: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -370px;
+    background: #FF9D54;
+    color: #fff;
+    display: none;
+}
+
+.sign_page.up .privacy_set .bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: #FF9D54;
+	border-left: 0;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.sign_page.up .privacy_set .bubble p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.sign_page.up .privacy_set .bubble span{
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.sign_page.up .privacy_set .radio_wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.sign_page.up .privacy_set .radio_wrap input{
+    margin-right: 10px;
+}
+
+.sign_page.up .privacy_set .radio_wrap label{
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+.sign_page.up .privacy_set .radio_wrap label:not(:last-child){
+    margin-right: 30px;
+}
+
+/* 본인인증 */
+.sign_page.verification .verify_box{
+    margin-top: 50px;
+}
+
+.sign_page.verification .verify_choice{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.sign_page.verification .verify_choice li{
+    width: 340px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.sign_page.find.verification .verify_choice li{
+    width: 317px;
+}
+
+.sign_page.verification .verify_choice li span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sign_page.verification .verify_choice .icon_box{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_page.verification .verify_choice .icon{
+    width: 130px;
+    height: 130px;
+}
+
+.sign_page.verification .verify_choice .phone .icon{
+    background: url(../img/icon/icon_phone_chk.svg) no-repeat center center / contain;
+}
+
+.sign_page.verification .verify_choice .pin .icon{
+    background: url(../img/icon/icon_pin_chk.svg) no-repeat center center / contain;
+}
+
+.sign_page.verification .verify_choice .gpki .icon{
+    background: url(../img/icon/icon_gpki_chk.svg) no-repeat center center / contain;
+}
+
+.sign_page.verification .verify_choice .document .icon{
+    background: url(../img/icon/icon_document_chk.svg) no-repeat center center / contain;
+}
+
+/* 정보입력 */
+.sign_page.up form{
+    width: 100%;
+}
+
+.sign_page.up .info_box:nth-of-type(1){
+    margin-bottom: 40px;
+}
+
+.sign_page.up .info_box .info_title{
+    width: 117px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_page.up .info_box.essential_info .info_title{
+    color: #FF7F21;
+    background: #FFE7D5;
+}
+
+.sign_page.up .info_box.optional_info .info_title{
+    color: #666;
+    background: #F2f2f2;
+}
+
+.sign_page.up .info_area{
+    border-radius: 20px;
+    margin-top: 14px;
+}
+
+.sign_page.up .essential_info .info_area{
+    border: 1px solid #FF9D54;
+    padding: 40px 36px;
+}
+
+.sign_page.up .optional_info .info_area{
+    padding: 30px 45px;
+    border: 1px solid #ddd;
+}
+
+.sign_page.up .essential_info .input_title{
+    font-size: 18px;
+    width: 124px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.sign_page.up .essential_info .input_text{
+    flex: 1;
+}
+
+.sign_page.up .essential_info .input_text .warning{
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.sign_page.up .essential_info ul{
+    display: flex;
+}
+
+.sign_page.up .essential_info .certification .input_text,
+.sign_page.up .essential_info .input_cover{
+    display: flex;
+}
+
+.sign_page.up .essential_info .input_cover{
+    justify-content: space-between;
+}
+
+.sign_page.up .essential_info .certification .input_text{
+    align-items: center;
+}
+
+.sign_page.up .essential_info input[type=text],
+.sign_page.up .essential_info input[type=password]{
+    width: 398px;
+    font-size: 16px;
+}
+
+.sign_page.up .essential_info input:read-only{
+    background: #F2F2F2;
+    color: #888;
+}
+
+.sign_page.up .essential_info .custom_select_wrapper{
+    width: 128px;
+}
+
+.sign_page.up .essential_info .custom_select_trigger{
+    height: 42px;
+}
+
+.sign_page.up .essential_info ul:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.sign_page.up .essential_info .certification_status{
+    width: 94px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.sign_page.up .essential_info .certification_status.not{
+    border: 1px solid #888;
+    color: #888;
+}
+
+.sign_page.up .essential_info .certification_status.fail{
+    border: 1px solid #FF1F1F;
+    color: #FF1F1F;
+}
+
+.sign_page.up .essential_info .certification_status.ing{
+    border: 1px solid #FF7F21;
+    color: #FF7F21;
+}
+
+.sign_page.up .essential_info .certification_status.complete{
+    border: 1px solid #00E009;
+    color: #00E009;
+}
+
+.sign_page.up .essential_info .certification .certification_btn{
+    width: 117px;
+    height: 35px;
+    margin-left: 16px;
+}
+
+.sign_page.up .essential_info button{
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.sign_page.up .essential_info .pw input{
+    margin-bottom: 10px;
+}
+
+.sign_page.up .essential_info .pw .comment{
+    font-size: 16px;
+    color: #888;
+}
+
+.sign_page.up .essential_info .email .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 398px;
+}
+
+.sign_page.up .essential_info .email .left input{
+    width: 117px;
+}
+
+.sign_page.up .essential_info .email .certification_btn,
+.sign_page.up .essential_info .input_cover button{
+    width: 122px;
+    height: 42px;
+    border-radius: 6px;
+}
+
+.sign_page.up .essential_info .phone input,
+.sign_page.up .essential_info .address input,
+.sign_page.up .essential_info .school input{
+    margin-bottom: 10px;
+}
+
+.sign_page.up .essential_info .phone .certify_num,
+.sign_page.up .essential_info .address .detail_address{
+    margin-bottom: 0;
+}
+
+.sign_page.up .optional_info .title{
+    font-size: 18px;
+    margin-bottom: 27px;
+    font-weight: 500;
+    color: #444;
+}
+
+.sign_page.up .optional_info .chk_area{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.sign_page.up .optional_info .chk_wrap:not(:last-child){
+    margin-right: 28px;
+}
+
+.sign_page.up .optional_info .chk_area .chk{
+    margin-right: 10px;
+}
+
+.sign_page.up .optional_info .chk_info.subject{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sign_page.up .optional_info .chk_info.marketing{
+    padding-top: 30px;
+}
+
+.sign_page.up .button_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign_page.up .button_wrap button{
+    width: 49%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.sign_page.up .essential_info .phone .input_box{
+    width: 398px;
+    position: relative;
+}
+
+.sign_page.up .essential_info .certify_num{
+    padding-right: 55px;
+}
+
+.sign_page.up .essential_info .phone .input_box span{
+    position: absolute;
+    font-size: 16px;
+    color: #FF9D54;
+    display: block;
+    line-height: 42px;
+    top: 0;
+    right: 16px;
+}
+
+/* 학교 검색 모달 */
+.schoolSearch_modal .modal_box,
+.documentChk_modal .modal_box{
+    width: 665px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.schoolSearch_modal .modal_title,
+.documentChk_modal .modal_title{
+    font-size: 21px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.schoolSearch_modal .table_wrap .top_area{
+    display: flex;
+    align-items: center;
+}
+
+.schoolSearch_modal .table_wrap .title{
+    font-size: 18px;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.schoolSearch_modal .table_wrap .top_area input{
+    width: 384px;
+    border: 1px solid #afafaf;
+}
+
+.schoolSearch_modal .table_wrap .search_btn{
+    width: 122px;
+    height: 42px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: block;
+}
+
+.schoolSearch_modal .table_head {
+    margin-top: 15px;
+    background: #FFF6EE;
+    border-bottom: 1px solid #FF7F21;
+}
+
+.schoolSearch_modal .table_head li {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schoolSearch_modal .table_body{
+    height: 276px;
+    overflow: auto;
+}
+
+.schoolSearch_modal .table_list {
+    border-bottom: 1px solid #ddd;
+}
+
+.schoolSearch_modal .table_list li{
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schoolSearch_modal .table_list li:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.schoolSearch_modal .table_wrap li:nth-child(1){
+    flex: 1;
+}
+
+.schoolSearch_modal .table_wrap li:nth-child(2){
+    width: 180px;
+}
+
+.schoolSearch_modal .table_wrap li:nth-child(3){
+    width: 360px;
+}
+
+.schoolSearch_modal .table_list li:nth-child(2),
+.schoolSearch_modal .table_list li:nth-child(3){
+    justify-content: flex-start;
+    padding: 0 15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.schoolSearch_modal .table_list li span{
+    display: block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.schoolSearch_modal .button_wrap,
+.documentChk_modal .button_wrap{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.schoolSearch_modal .button_wrap button,
+.documentChk_modal .button_wrap button{
+    width: 195px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.schoolSearch_modal .cancel_btn,
+.documentChk_modal .cancel_btn{
+    margin-right: 10px;
+}
+
+.schoolSearch_modal .table_body::-webkit-scrollbar {
+    width: calc(100vw * (5 / 1920));
+}
+
+.schoolSearch_modal .table_body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.schoolSearch_modal .table_body::-webkit-scrollbar-thumb {
+    background: #FF9D54;
+    border-radius: 20px;
+}
+
+/* 학교 검색 모달 */
+.documentChk_modal .comment_list p{
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+}
+
+.documentChk_modal .comment_list p::before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #222;
+    border-radius: 50%;
+    margin: 0 10px 0 5px;
+}
+
+.documentChk_modal .document_upload{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.documentChk_modal .document_upload .top_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.documentChk_modal .document_upload #document_file{
+    display: none;
+}
+
+.documentChk_modal .document_upload .upload_name{
+    width: 480px;
+    height: 35px;
+    background: #F6F6F6;
+}
+
+.documentChk_modal .upload_box label{
+    width: 117px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.documentChk_modal .document_preview{
+    width: 100%;
+    height: 257px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+}
+
+/* 회원가입 완료 */
+.sign_page.up.complete .form_wrap{
+    padding: 150px 0 330px;
+    width: 360px;
+}
+
+.sign_page.up.complete .form_wrap .page_title{
+    margin: 0 0 60px;
+}
+
+.sign_page.up.complete .img_box{
+    width: 100%;
+    height: 176px;
+    background: url(../img/main/people.png) no-repeat center center / contain;
+}
+
+.sign_page.up.complete .comment{
+    text-align: center;
+    font-size: 15px;
+    line-height: 160%;
+    margin: 30px 0 70px;
+}
+
+.sign_page.up.complete .signIn_btn{
+    width: 327px;
+    height: 48px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: auto;
+}
+
+/* 아이디/비밀번호 찾기 */
+.sign_page.find .form_wrap {
+    width: 665px;
+    margin: auto;
+}
+
+.sign_page.find.main .form_wrap,
+.sign_page.find.enter .form_wrap {
+    padding: 250px 0 350px;
+}
+
+.sign_page.find.verification .form_wrap {
+    padding: 110px 0 250px;
+}
+
+.sign_page.find.end .form_wrap {
+    padding: 200px 0 350px;
+}
+
+.sign_page.find .form_wrap .page_title{
+    font-size: 24px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+.sign_page.find.main .form_wrap .page_title{
+    margin-bottom: 80px;
+}
+
+.sign_page.find.enter .form_wrap .page_title{
+    margin-bottom: 74px;
+}
+
+.sign_page.find .form_wrap .page_comment{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sign_page.find.main .form_wrap a,
+.sign_page.find.end .signIn_btn,
+.sign_page.pw.find form .next_btn{
+    width: 494px;
+    height: 64px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    box-shadow: none;
+    margin: auto;
+}
+
+
+.sign_page.find.main .form_wrap .idFind_btn{
+    margin: 0 auto 20px;
+}
+
+.sign_page.find .info_box{
+    width: 494px;
+    margin: auto;
+    padding: 23px;
+    margin-bottom: 54px;
+    text-align: center;
+    background: #FFf5ee;
+}
+
+.sign_page.find .info_box .icon_box{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto 20px;
+    background: url(../img/icon/icon_exclamation_mark.svg) no-repeat center center / contain;
+}
+
+.sign_page.find .info_box .comment{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.sign_page.pw.find .info_box .comment{
+    margin-bottom: 30px;
+}
+
+.sign_page.find .info_box .comment span{
+    color: #FF7F21;
+}
+
+.sign_page.pw.find .info_box .comment span{
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sign_page.pw.find form{
+    width: 494px;
+    margin: auto;
+}
+
+.sign_page.pw.find form input{
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.sign_page.pw.find form .next_btn{
+    width: 100%;
+    margin-top: 55px;
+}

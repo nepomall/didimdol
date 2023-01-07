@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/share.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/share.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page share_page manage">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="class_data_share.html" class="link basic_btn white">
+                            수업 자료 공유
+                        </a>
+                        <a href="class_manage_share.html" class="link basic_btn orange">
+                            학급 운영 공유
+                        </a>
+                        <a href="class_newbie_share.html" class="link basic_btn white">
+                            새내기 Q&A
+                        </a>
+                        <a href="class_diary.html" class="link basic_btn white">
+                            수업 일기
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>나눔 마당</span>
+                        <span>학급 운영 공유</span>
+                    </div>
+                    <div class="tip_box">
+                        <h3 class="yde">학급 운영 공유</h3>
+                        <p>
+                            학급 운영 꿀팁을 서로서로 공유해봐요!
+                        </p>
+                    </div>
+                    <div class="choice_wrap">
+                        <h3>
+                            학년 선택
+                        </h3>
+                        <div class="choice_box grade">
+                            <button class="choice_btn grade_btn">
+                                전체
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                1학년
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                2학년
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                3학년
+                            </button>
+                            <button class="choice_btn grade_btn active">
+                                4학년
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                5학년
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                6학년
+                            </button>
+                        </div>
+                        <div class="choice_box semester">
+                            <button class="choice_btn semester_btn active">
+                                1학기
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                2학기
+                            </button>
+                        </div>
+                        <h3>
+                            과목 선택
+                        </h3>
+                        <div class="choice_box subject">
+                            <button class="choice_btn semester_btn active">
+                                수학
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                사회
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                과학
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                국어
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                기타
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table_wrap">
+                        <div class="top_area align">
+                            <a href="#" onclick="return false;" class="link active">
+                                최신순
+                            </a>
+                            <a href="#" onclick="return false;" class="link">
+                                조회순
+                            </a>
+                            <a href="#" onclick="return false;" class="link">
+                                추천순
+                            </a>
+                        </div>
+                        <ul class="table_head">
+                            <li>
+                                <span>번호</span>
+                            </li>
+                            <li>
+                                <span>자료명</span>
+                            </li>
+                            <li>
+                                <span>작성자</span>
+                            </li>
+                            <li>
+                                <span>작성일</span>
+                            </li>
+                            <li>
+                                <span>조회</span>
+                            </li>
+                            <li>
+                                <span>추천</span>
+                            </li>
+                        </ul>
+                        <div class="table_body">
+                            <!-- 게시글 없을 시 -->
+                            <!-- <div class="empty_box">
+                                게시글이 없습니다.
+                            </div> -->
+                            <!-- 리스트 -->
+                            <ul class="table_list">
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>자료 제목</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>김**</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>0000. 00. 00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="class_manage_share_detail.html" class="link">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="align">
+                            <a href="class_manage_share_edit.html" class="basic_btn orange link regist_btn">
+                                글 등록
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagenation">
+                        <div class="prev icon_box active"></div>
+                        <ul>
+                            <li class="num active">
+                                <span>1</span>
+                            </li>
+                            <li class="num">
+                                <span>2</span>
+                            </li>
+                            <li class="num">
+                                <span>3</span>
+                            </li>
+                            <li class="num">
+                                <span>4</span>
+                            </li>
+                            <li class="num">
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="next icon_box"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

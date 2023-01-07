@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/d_quiz.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/d_quiz.css" />
+    <link rel="icon" href="../images/icon/favicon.ico">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="wrap_content" class="d_quiz_page report detail">
+            <div class="head">
+                <div class="wrap_inner">
+                    <div class="left">
+                        <div class="icon_box"></div>
+                        <span>D퀴즈</span>
+                    </div>
+                    <button class="logout_btn"></button>
+                </div>
+            </div>
+            <div class="wrap_inner">
+                <aside>
+                    <div class="page_nav">
+                        <a href="d_quiz_main.html" class="link basic_btn white">
+                            홈
+                        </a>
+                        <a href="d_quiz_make_stepOne.html" class="link basic_btn white">
+                            퀴즈 만들기
+                        </a>
+                        <a href="d_quiz_library.html" class="link basic_btn white">
+                            라이브러리
+                        </a>
+                        <a href="d_quiz_my.html" class="link basic_btn white">
+                            마이 퀴즈
+                        </a>
+                        <a href="d_quiz_report.html" class="link basic_btn orange">
+                            퀴즈 리포트
+                        </a>
+                    </div>
+                </aside>
+                <section class="content_section">
+                    <div class="analysis_wrap">
+                        <h3 class="basic_btn whiteOg part_name">
+                            D퀴즈 분석표
+                        </h3>
+                        <button type="button" class="print_btn"></button>
+                        <!-- 기본정보 -->
+                        <div class="report_info">
+                            <span class="report_title">
+                                [초등 수학 2-1-1단원 연산퀴즈] 분석표
+                            </span>
+                            <ul>
+                                <li class="title">
+                                    <span>학년</span>
+                                </li>
+                                <li class="text grade">
+                                    <span>2학년</span>
+                                </li>
+                                <li class="title">
+                                    <span>학기</span>
+                                </li>
+                                <li class="text smester">
+                                    <span>1학기</span>
+                                </li>
+                                <li class="title">
+                                    <span>단원</span>
+                                </li>
+                                <li class="text unit">
+                                    <span>1단원</span>
+                                </li>
+                                <li class="title">
+                                    <span>문항</span>
+                                </li>
+                                <li class="text question">
+                                    <span>20문항</span>
+                                </li>
+                                <li class="title">
+                                    <span>날짜</span>
+                                </li>
+                                <li class="text date">
+                                    <span>2022.04.11</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 정답률 테이블-->
+                        <div class="table_area">
+                            <h3 class="nickname">닉네임</h3>
+                            <div class="table_wrap">
+                                <ul class="table">
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>5</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>6</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>8</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>9</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>10</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>11</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>12</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>13</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>14</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>15</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="wrong">
+                                        <div class="question_num">
+                                            <span>16</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>17</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>18</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>19</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>20</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="correct_rate">
+                                    <div class="title">정답률</div>
+                                    <div class="percent">
+                                        <span>95</span>%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table_area">
+                            <h3 class="nickname">닉네임</h3>
+                            <div class="table_wrap">
+                                <ul class="table">
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>5</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>6</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>7</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>8</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>9</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>10</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>11</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>12</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>13</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>14</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>15</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="wrong">
+                                        <div class="question_num">
+                                            <span>16</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>17</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>18</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>19</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                    <li class="correct">
+                                        <div class="question_num">
+                                            <span>20</span>
+                                        </div>
+                                        <div class="answer">
+                                            <div class="icon_box"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="correct_rate">
+                                    <div class="title">정답률</div>
+                                    <div class="percent">
+                                        <span>95</span>%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 오답률 -->
+                    <div class="wrong_answer_rate">
+                        <h3 class="basic_btn whiteOg part_name">
+                            문항별 오답률
+                        </h3>
+                        <div class="table_wrap">
+                            <div class="table">
+                                <ul class="table_head">
+                                    <li>
+                                        <span>문항</span>
+                                    </li>
+                                    <li>
+                                        <span>오답률</span>
+                                    </li>
+                                    <li>
+                                        <span>미리보기</span>
+                                    </li>
+                                </ul>
+                                <div class="table_body">
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>10</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>12</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>2</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>3</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <ul class="table_head">
+                                    <li>
+                                        <span>문항</span>
+                                    </li>
+                                    <li>
+                                        <span>오답률</span>
+                                    </li>
+                                    <li>
+                                        <span>미리보기</span>
+                                    </li>
+                                </ul>
+                                <div class="table_body">
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>10</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>12</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>2</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>3</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <ul class="table_head">
+                                    <li>
+                                        <span>문항</span>
+                                    </li>
+                                    <li>
+                                        <span>오답률</span>
+                                    </li>
+                                    <li>
+                                        <span>미리보기</span>
+                                    </li>
+                                </ul>
+                                <div class="table_body">
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>10</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>12</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>2</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>3</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table">
+                                <ul class="table_head">
+                                    <li>
+                                        <span>문항</span>
+                                    </li>
+                                    <li>
+                                        <span>오답률</span>
+                                    </li>
+                                    <li>
+                                        <span>미리보기</span>
+                                    </li>
+                                </ul>
+                                <div class="table_body">
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>10</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>12</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>1</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>2</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                    <ul class="table_list">
+                                        <li class="question">
+                                            <span>3</span>
+                                        </li>
+                                        <li class="rate">
+                                            <span>90%</span>
+                                        </li>
+                                        <li class="preview">
+                                            <button class="preview_btn"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

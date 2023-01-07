@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/share.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/share.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page share_page diary">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="page_nav">
+                        <a href="class_data_share.html" class="link basic_btn white">
+                            수업 자료 공유
+                        </a>
+                        <a href="class_manage_share.html" class="link basic_btn white">
+                            학급 운영 공유
+                        </a>
+                        <a href="class_newbie_share.html" class="link basic_btn white">
+                            새내기 Q&A
+                        </a>
+                        <a href="class_diary.html" class="link basic_btn orange">
+                            수업 일기
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>나눔 마당</span>
+                        <span>수업 일기</span>
+                    </div>
+                    <div class="tip_box">
+                        <h3 class="yde">수업 일기</h3>
+                        <p>
+                            나만의 수업 일기! 익명으로 선생님의 고민을 이야기해 보세요!
+                        </p>
+                    </div>
+                    <div class="diary_regist">
+                        <textarea placeholder="내용을 입력해 주세요."></textarea>
+                        <button class="basic_btn orange regist_btn" disabled>등록</button>
+                    </div>
+                    <div class="diary_post_wrap">
+                        <div class="diary_box">
+                            <div class="comment_area">
+                                <p>
+                                    국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는
+                                    국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+                                </p>
+                                <div class="comment_option">
+                                    <div class="left">
+                                        <button class="like_btn active"></button>
+                                        <span>50</span>
+                                    </div>
+                                    <div class="comment_control">
+                                        <button class="reply">답글달기</button>
+                                        <button class="delete_btn">삭제</button>
+                                        <button class="edit">수정</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="comment_list">
+                                <li class="normal">
+                                    <p>
+                                        댓글입니다.
+                                    </p>
+                                    <div class="comment_control">
+                                        <button class="reply">답글달기</button>
+                                        <button class="delete_btn">삭제</button>
+                                        <button class="edit">수정</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </li>
+                                <li class="comment_write reply">
+                                    <textarea placeholder="답글을 입력해 주세요."></textarea>
+                                    <button class="basic_btn orange regist_btn" disabled>등록</button>
+                                </li>
+                                <li class="normal">
+                                    <p>
+                                        댓글입니다.
+                                    </p>
+                                    <div class="comment_control">
+                                        <button class="reply">답글달기</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </li>
+                                <li class="normal reply">
+                                    <p>
+                                        해당 댓글에 대한 답글
+                                    </p>
+                                    <div class="comment_control">
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </li>
+                                <li class="normal">
+                                    <p>
+                                        댓글입니다.
+                                    </p>
+                                    <div class="comment_control">
+                                        <button class="reply">답글달기</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </li>
+                                <li class="normal reply">
+                                    <p>
+                                        해당 댓글에 대한 답글
+                                    </p>
+                                    <div class="comment_control">
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="diary_box">
+                            <div class="comment_area">
+                                <p>
+                                    국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는
+                                    국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+                                </p>
+                                <div class="comment_option">
+                                    <div class="left">
+                                        <button class="like_btn"></button>
+                                        <span>50</span>
+                                    </div>
+                                    <div class="comment_control">
+                                        <button class="reply">답글달기</button>
+                                        <button class="delete_btn">삭제</button>
+                                        <button class="edit">수정</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="diary_box">
+                            <div class="comment_area">
+                                <p>
+                                    국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는
+                                    국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+                                    국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는
+                                    국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+                                    국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는
+                                    국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+                                </p>
+                                <div class="comment_option">
+                                    <div class="left">
+                                        <button class="like_btn"></button>
+                                        <span>50</span>
+                                    </div>
+                                    <div class="comment_control">
+                                        <button class="delete_btn">삭제</button>
+                                        <span class="date">0000. 00. 00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="basic_btn orange more_view">
+                            더보기
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 삭제모달 -->
+        <div class="modal_wrap message_modal delete_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    삭제를 진행하시겠습니까?
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn whiteOg cancel_btn close_btn">
+                        취소
+                    </button>
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>

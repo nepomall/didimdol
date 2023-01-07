@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디딤돌</title>
+    <!--Import-->
+    <script type="text/javascript" src="../../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../../js/commonElement.js "></script>
+    <script type="text/javascript" src="../../js/common.js "></script>
+    <script type="text/javascript" src="../../js/classPlus_data.js "></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/classPlus_data.css" />
+</head>
+
+<body>
+
+    <div id="wrap">
+        <didimdol-header></didimdol-header>
+        <didimdol-sidemenu></didimdol-sidemenu>
+
+        <div id="wrap_content" class="sub_page classPlus_data_page main">
+            <div class="wrap_inner">
+                <!-- 왼쪽 -->
+                <aside>
+                    <div class="choice_wrap">
+                        <h3>
+                            학년 선택
+                        </h3>
+                        <div class="choice_box grade">
+                            <button class="choice_btn grade_btn active">
+                                1
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                2
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                3
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                4
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                5
+                            </button>
+                            <button class="choice_btn grade_btn">
+                                6
+                            </button>
+                        </div>
+                        <div class="choice_box semester">
+                            <button class="choice_btn semester_btn active">
+                                1학기
+                            </button>
+                            <button class="choice_btn semester_btn">
+                                2학기
+                            </button>
+                        </div>
+                    </div>
+                    <div class="page_nav">
+                        <a href="classPlus_data.html" class="link basic_btn orange">
+                            수학
+                        </a>
+                    </div>
+                    <div class="bubble">
+                        <a href="creat_class.html" class="link">
+                            바로 써먹는 수학 수업 TIP
+                        </a>
+                    </div>
+                </aside>
+                <!-- 메인 -->
+                <section class="content_section">
+                    <div class="page_way">
+                        <span>수업 플러스 자료</span>
+                        <span>1학년</span>
+                        <span>1학기</span>
+                        <span>수학</span>
+                    </div>
+                    <!-- 페이지상단 -->
+                    <div class="page_top">
+                        <div class="grade">
+                            <p class="num">1</p> 학년
+                        </div>
+                        <div class="semester">
+                            <p class="num">1</p> 학기
+                        </div>
+                    </div>
+                    <!-- 단원선택 -->
+                    <div class="unit_tabs">
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                        <div class="tab">
+                            <span>단원명</span>
+                        </div>
+                    </div>
+                    <!-- 단원 공통 자료 테이블 -->
+                    <div class="table_wrap common_data">
+                        <div class="table_head">
+                            <span>단원 공통 자료</span>
+                        </div>
+                        <div class="table_body">
+                            <ul class="table_list">
+                                <li class="video">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="video_btn"></button>
+                                </li>
+                                <li class="folder">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="folder_btn"></button>
+                                </li>
+                                <li class="hwp">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                                <li class="pdf">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 테이블 -->
+                    <div class="table_wrap individual_data">
+                        <div class="table_head">
+                            <span>차시명 text</span>
+                        </div>
+                        <div class="table_body">
+                            <ul class="table_list">
+                                <li class="video">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="video_btn"></button>
+                                </li>
+                                <li class="folder">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="folder_btn"></button>
+                                </li>
+                                <li class="hwp">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                                <li class="pdf">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="table_wrap individual_data">
+                        <div class="table_head">
+                            <span>차시명 text</span>
+                        </div>
+                        <div class="table_body">
+                            <ul class="table_list">
+                                <li class="video">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="video_btn"></button>
+                                </li>
+                                <li class="folder">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <button class="folder_btn"></button>
+                                </li>
+                                <li class="jpg">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                                <li class="mp4">
+                                    <span>
+                                        자료명
+                                    </span>
+                                    <a href="../../download/test.txt" class="link download_btn" download></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- 비디오 모달 -->
+        <div class="modal_wrap video_modal">
+            <div class="modal_box">
+                <div class="modal_head">
+                    <h3>파일명 파일명 파일명 파일명 파일명</h3>
+                    <button class="close_btn"></button>
+                </div>
+                <div class="video_area">
+                    <video class="science_video" controls playsinline controlsList="nodownload">
+                        <source src="../../video/temporary.mp4" type="video/mp4">
+                    </video>
+                    <div class="play_bg">
+                        <button class="play_btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 파일 스크랩 모달 -->
+        <div class="modal_wrap message_modal scrap_modal">
+            <div class="modal_box">
+                <span class="comment">
+                    파일을 스크랩 했습니다.
+                </span>
+                <div class="button_wrap">
+                    <button class="basic_btn orange confirm_btn close_btn">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <didimdol-footer></didimdol-footer>
+
+    </div>
+</body>
+
+</html>
